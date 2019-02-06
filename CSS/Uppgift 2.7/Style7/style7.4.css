@@ -1,0 +1,23 @@
+body{
+	width:60em;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+    
+} 
+header {
+	padding: 12px;
+    color:black;
+}
+
+.content1{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+.content2{
+    -webkit-column-width: 200px; /* Chrome, Safari, Opera */
+    -moz-column-width: 100px; /* Firefox */
+    column-width: 100px;
+}

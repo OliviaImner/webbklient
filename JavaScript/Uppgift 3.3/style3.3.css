@@ -1,0 +1,35 @@
+body{
+	width:70%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+
+a,ul{
+    float: left;
+    clear: both;
+}
+.box{
+    background-color: lightgray;
+	border-radius: 10px;
+    padding: 5px;
+	border: 1px solid black;
+	width: 50%;
+	margin-bottom: 5px;
+    float: left;
+    clear: both;
+}
+
+
+#divLinkOpen{
+    background-color: olive;
+	border-radius: 10px;
+    padding: 5px;
+	display: inline-block;
+}
+#divLinkClose{
+	background-color: lightslategray; 
+	border-radius: 10px;
+    padding: 5px;
+	display: inline-block;
+}

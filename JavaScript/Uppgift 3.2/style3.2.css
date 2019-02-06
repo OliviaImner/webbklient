@@ -1,0 +1,92 @@
+body{
+	width:70%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+a{
+    float: left;
+    clear: both;
+}
+input{
+    float: left;
+    clear: both;
+}
+#change
+{
+	background-color: #FFF08F;
+	border-radius: 10px;
+	float:left;
+	padding:2em;
+    clear:right;
+}
+
+#Content {
+    background-image: linear-gradient(to left, #267272, #FFFFFF);
+    float: left;
+    border-radius: 10px;
+    padding: 2em;
+    clear: both;
+}
+img{
+    float: right;
+    clear: both;
+}
+.Class1 {
+    padding:2em;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #267272, #FFFFFF);
+    float: left;
+}
+.Class2 {
+    padding:2em;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #FFF, #267272);
+    float: left;
+}
+#hover
+{
+	background-color: #267272;
+	border-radius: 10px;
+	float:left;
+	padding:2em;
+    clear:both;
+}
+
+#mouseEvent
+{
+	background-color: #267272;
+	border-radius: 10px;
+	float:left;
+	padding:2em;
+    clear:both;
+}
+#removeE
+{
+	background-color: white;
+    border:1px solid lightgrey;
+	border-radius: 10px;
+    padding: 10px;
+    float: left;
+    clear: both;
+}
+#windowSize
+{
+	
+	background-color: #267272;
+	border-radius: 10px;
+	float:left; 
+	border:1px solid grey;
+	margin: 5px;
+    clear: both;
+}
+#getInfo
+{
+
+	background-color:white; 
+    border:1px solid lightgrey;
+	border-radius: 10px;
+    padding: 10px;
+    float: left;
+    clear: both;
+}

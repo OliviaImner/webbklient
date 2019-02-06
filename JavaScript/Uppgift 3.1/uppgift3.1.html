@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title> Olivia Imner 3.1 </title>
+
+</head>
+	<body>
+
+        <h1>JavaScript uppgift 3.1</h1>
+        <h2>Arrays</h2>
+        <p>Här visas syntaxen för arrays i .js filen. Det som skrivs in ät att visa alla arrays med den ordnings följd.</p>
+<pre><code>
+var daysOfWeek = ["måndag", "tisdag", "onsdag", "torsdag", "fredag", "lördag", "söndag"];
+
+function weekArray(){
+document.getElementById("week").innerHTML = daysOfWeek;  
+}
+weekArray();
+</code></pre>   
+        <div id ="week"></div>
+
+        <h2>Datum</h2>
+        <p>Nedanför visas syntaxen för att använda Date() med en js fil, samt dagens datum som är output av koden.  </p>
+        <pre><code>
+var d = new Date();
+var n = d.toDateString();
+
+function day() {
+        document.getElementById("date").innerHTML = n;
+}
+
+day();
+        </code></pre>
+        <div id="date" ></div>
+        
+        <h2>Boolean</h2>
+        <p>En boolean kan ha två olika värdem, true eller false (sann eller falsk). 
+        I detta fall ska det kollas om 5 är mindra än 4. För att få svar, tryck på "submit".</p>
+        <button onclick="torf()" >Submit</button>
+         <div id="stuff" ></div>
+
+        <h2>Math</h2>
+        <p>Math är att göra matematiska uträkningar med genom placera desas uträkningar i en js fil. 
+        I js filen fungerar funktionen genom att "pow" är att talet i detta fall, 389 blir upp höjt till 2 och därefter beräknas kvoten ut talet. Detta är bara ett exempel på hur några av funktionerna används i Math, det kan såklarrt göras svårare uträckningarn än exempelt nedanför. Tryck på knappen för att se svaret: </p>
+        <pre><code>
+function calculate(){
+    p = Math.pow(7,2);
+    rut = Math.sqrt(p);
+    output = rut;
+    return document.getElementById("cal").innerHTML =  Math.round(output);
+
+}
+        </code></pre>
+        <button onclick="calculate()">Visa</button>
+        <div id="cal"></div>
+        
+        <h2>Nummer</h2>
+        <p>Nummer funktionen används för att konertera objektets argument till ett nummer och resulterar i objektets värde. Om ett argument inte kan konverteras visas Nan. Exempel nedanför:  </p>
+<pre><code>
+ var x1 = "999";
+ var x2 = "999 888";
+    
+    function numbers(){
+    var no = 
+    Number(x1) + "&lt;br&gt;" + Number(x2); 
+    document.getElementById("num").innerHTML = no;
+}
+</code></pre>
+        <button onclick="numbers()">Svar</button>
+        <div id="num"></div>
+        <h2>String</h2>
+        <p>String är att en textstäng kan visas i dokumentet, detta kan göras genom att använda toString(). I exemplet visas en textsträng när muspekaren trycker på texten. </p>
+        
+             <div id="name" onclick="stringex()">Tryck på texten för att se vad jag heter</div>
+        
+        <h2>RegExp</h2>
+        <p>Text kan bytas ut igenom att använda replace, i syntaxen nedanför visas hur "sämst" byts it till "bäst" genom att trycka på knappen visa.</p>
+        <pre><code>
+function regEx() {
+    var str = document.getElementById("reg").innerHTML; 
+    var txt = str.replace(/sämst/i, "bäst");
+    document.getElementById("reg").innerHTML = txt;
+}</code></pre>
+        
+        <div id="reg">Olivia Imner är sämst! </div>
+        <button onclick="regEx()">Visa</button>
+
+        <h2>Global</h2>
+        <p>Globalt objekt är att det alltid finns ett objekt som befinner sig i den globala scopen. Det ett globalt objekt medför är att förser variabler och funktioner i javascript dokumentet. Nedanför är ett exempel på variabeln glo som innehåller en String.</p>
+<pre><code> 
+var glo = "GLOBAL";
+function myglobal() {
+    document.getElementById("global").innerHTML =
+    "Med " + glo + " kan objekt skapas utanför funktionen";
+}
+    myglobal();</code></pre>
+        
+        <div id="global"> </div>
+        
+        <script type="text/javascript" src="main1.js"></script>
+
+	</body>
+</html>

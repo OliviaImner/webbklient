@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title> Olivia Imner 1.4 </title>
+</head>
+<body>
+<form id="form" name="form" method="get" action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.1/perl/example.cgi">
+		Ange användarnamn och lösenord:<br>
+		
+		<input type="text" 
+				placeholder="Användarnamn" 
+				autofocus 
+				required 
+				pattern="[a-z]{1,15}"
+				title=""><br>
+		
+		<input type="password" 
+				placeholder="Lösenord"
+				required
+				pattern="[a-z]{1,15}"><br>
+		
+		<input type="submit">
+
+		<br>
+
+		Kommentarer:
+		<br>
+		<textarea 
+		name="meddelande"
+		id="meddelande" cols="45" 
+		rows="5" required>
+		</textarea>
+		<br>
+		
+		<input
+		type="submit"
+		name="skicka"
+		id="skicka"
+		value="Skicka meddelandet" 
+		/>
+		<input type="reset" 
+		name="reset" 
+		id="reset" 
+		value="Återställ formuläret" />
+		<br>
+		<br>
+		<fieldset style="width: 450px;">
+		<legend>KRYSSA I DET DU ÄR INTRESSERAD AV</legend>	
+	
+		<br>
+		<input type="checkbox" 
+		name="Intresseämnen" 
+		id="Javascript" 
+		value="Javascript"/>
+		<label for="Javascript">Javascript</label><br />
+
+		<input type="checkbox" 
+		name="Intresseämnen" 
+		id="CSS" 
+		value="CSS"/>
+		<label for="CSS">CSS</label> <br />
+
+		<input type="checkbox" 
+		name="Intresseämnen" 
+		id=".NET" 
+		value=".NET"/>
+		<label for=".NET">.NET</label> <br />
+
+		<input type="checkbox" 
+		name="Intresseämnen" 
+		id="Ecommerce" 
+		value="Ecommerce"/>
+		<label for="Ecommerce">Ecommerce</label><br>
+		</fieldset>
+
+		<br>
+		<fieldset style="width: 450px;">
+		<legend>Är du villig att gör affärsresor? </legend>	
+		<br>
+		<input type="radio" 
+		name="Fråga" 
+		id="Ja" 
+		value="Ja" />
+		<label for="Ja">Ja</label> <br />
+
+		<input type="radio" 
+		name="Fråga" 
+		id="Nej" 
+		value="Nej" />
+		<label for="Nej">Nej</label> <br>
+		<br>
+		<input type="image" 
+		name="submit" 
+		id="submit" 
+		src="Submit.png" 
+		alt="Submit"
+		width="50" 
+		height="50"/>
+		<br>
+		
+		
+		<input type="button" 
+		id="vidare" 
+		value="vidare"/>
+		<label for="vidare"></label> <br>
+		<br>
+		<br>
+		
+		</fieldset>
+	
+		
+		<fieldset style="width: 450px;">
+			<legend>VÄLJ OPS OCH PROGRAMVARA SOM DU ANVÄNDER</legend>	
+
+			<select name="lista" id="lista" size="8" multiple="multiple">
+				<optgroup label="Operativsystem">
+					<option value="Linux"> Linux </option>
+					<option value="Windows"> Windows </option>
+					<option value="Mac OS"> UX </option>
+				</optgroup>
+				<optgroup label="Programvara">
+					<option value="Eclipse">Eclipse</option>
+					<option value="Xcode"> Xcode </option>
+					<option value="NetBeans"> NetBeans </option>
+				</optgroup>
+			</select>
+		</fieldset>
+<br>
+<br>
+
+	<fieldset style="width: 450px;">
+		<legend>FYLL I KONTAKTINFORMATION</legend>
+
+		<label for="fnamn">Förnamn:</label> <br>
+			<input type="text" 
+			name="fnamn" 
+			id="fnamn" 
+			required/> <br />
+		
+		<datalist id="Namnlista">
+  				<option value="Matilda">Matilda</option>
+  				<option value="Linda">Linda</option>
+ 				<option value="Olivia">Olivia </option>
+		</datalist>
+		
+		<label for="enamn">Efternamn:</label> <br>
+			<input type="text" 
+			name="enamn" 
+			id="enamn" />
+				
+  		<br>
+		<label for="email">E-postadress:</label> <br>
+			<input type="email" 
+			name="email" 
+			id="email" 
+			placeholder="olivia@example.com"
+			pattern="[[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+			title="Skriv in en giltig email"
+			multiple/> 
+			<br>
+		<label for="webbsida">Webbsida:</label> <br />
+			<input type="url" 
+			name="webbsida"
+			id="webbsida"/> 
+
+   </fieldset>
+				<input type="submit" 
+				name="vidare2"
+				id="vidare2" 
+				value="vidare" />
+			 <br>
+			 
+			 
+	<br>
+	<br>
+	<fieldset style="width: 450px;">
+    <legend>FYLL I</legend>
+    <label for="antal">Antal:</label> <br>
+    <input type="number"
+    	name="antal"
+    	id="antal"
+    	min="0" 
+    	max="30" 
+    	step="1"> <br>
+    	<br>
+    <label for="range">Poäng:</label> <br>
+    <input type="range"
+    	name="range"
+    	id="range"
+    	min="0" 
+    	max="50" 
+    	step="5"
+    	value="50"> 
+    	<br>
+    	<br>
+    <label for="bokningstart">Dagens datum och tid för när bokning ska skapas :</label> <br>
+    <input type="datetime-local" 
+    	   name="bokningstart"
+    	   id="bokningstart"
+    	   >
+    
+    	   <br>
+    <label for="månad">Bokning från:</label> <br>
+    <input type="month" 
+    	   name="månad"
+    	   id="månad"
+    	    >
+    	   <br>
+    <label for="date"> Bokning upphör:</label> <br>	   
+    <input id="date" type="date"
+    		>
+    		<br>
+    <label for="week">Vecka:</label> <br>
+    <input id="week" type="week"
+    	   >
+    	   <br>
+    <label for="time">Tid på dygnet lokalen ska vara öppen:</label> <br>	  
+    <input id="time" type="time"
+    	   >
+    </fieldset>
+  	
+</form>
+<form action="https://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.2/perl/example.cgi" enctype="multipart/form-data" method="post">
+
+	<p>
+		Välj en fil:<br>
+		<input type="file" 
+		name="file" 
+		size="40" >
+    </p>
+		<div>
+			<input type="submit" 
+			value="Skicka">
+	    </div>
+	
+</form>
+</body>
+</html>

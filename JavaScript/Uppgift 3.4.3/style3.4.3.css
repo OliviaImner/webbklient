@@ -1,0 +1,27 @@
+body{
+	width:70%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+h3{
+    font-size: 20px;
+    color: seagreen;
+}
+/*Här är designen för menyn, som font, storlek, etc.*/
+.dropdown #lista {
+	display: block;
+	clear: both;
+	height: 90px;
+}
+
+#lista a{
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+    text-decoration-line: none;
+    color: #225b3a; 
+}
+
+.dropdown #lista {
+	display: none;
+}

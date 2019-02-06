@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title> Olivia Imner 2.5 </title>
+     <link rel="stylesheet" href="style5.css">
+
+</head>
+	<body>
+        <article>
+            <h2>Länktillstånd</h2>
+                <p>Om länkar på webbsidan ska styras på ett visst sätt behövs inte bara selektor "a" utan det finns många val att välja mellan. Beroende på vilket tillstånd länken är i, kan det därmed kontrolleras hur utseende på länken ska presenteras på webbsidan.</p>
+                    
+                <h3>a:link</h3>
+                <p>Vanligtvis används <code>a:link</code> på webbsidor, denna tagg visar att det finns en länk som muspekaren kan trycka på. a:link är alltså det den visaren för användaren innan en interaktion uppstår mellan elementet och användaren.
+               </p>
+<pre><code>
+a:link{
+color: hotpink; 
+}</code></pre>
+                <h3>a:hover</h3>
+                <p>Är hur användaren ska se hur länken tillstånd förändras när muspekaren är över elementet. </p>
+<pre><code>
+a:hoover{
+color: pink;
+}</code></pre>
+            <h3>a:active</h3>
+            <p>Selektor a:active är hur tillståndet förändras under den korta perioden användaren faktiskt trycker på länken. Detta är sista tillståndet innan användaren skickas till den vägen till den länkade sidan. </p>
+<pre><code>
+a:active{
+color: #8378F6;
+background-color: #FFFFFF;
+}</code></pre>
+            <h3>a:visited</h3>
+            <p>Det sista tillståndet är a:visited och är då användaren har besökt länken. </p>
+<pre><code>
+a:visited{
+color: #EA32DB;
+}
+</code></pre>
+            <a href="http://google.se" id="link1">Google</a>
+
+            <h3>Cursor</h3>
+            <p>Med cursor bestämms det hur muspekaren ska presenteras när användaren är på webbsidan. Det går att byta utseendet på muspekaren, beroende på vilken del av dokumnetet som användaren drar pekaren över. 
+            Exempel på detta visas nedanför:</p>
+<pre><code>
+p{
+cursor: pointer;
+}  </code></pre>
+            <h3>Länk som en knapp</h3>
+            <p>Knappar kan skapas genom att använda CSS, det behövs alltså inte läggas till bilder eller liknaden för att knappen ska vara synlig. Nedanför är ett exempel på hur en knapp kan se ut.</p>
+            <br>
+            <a href="http://google.se" id="knapp">Google</a>
+            <br>
+            <h3>Bildlänk</h3>
+            <p>En bildlänk är en bild som är implementerad som en länk. Det kan läggas till olika effekter för att tydliggöra olika tillstånd. Nedanför är ett exempel på en bildlänk.</p>
+            
+            <br>
+            <a href="http://google.se" id="imglink">Google</a>
+            <br>
+            <br>
+        </article>
+	</body>
+</html>

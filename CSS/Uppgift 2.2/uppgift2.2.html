@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title> Olivia Imner 2.2 </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+	<body>
+        <article>
+          <h2>Fontfamilj</h2>
+            <p>
+            Med fontfamilj bestäms det vilket typsnitt, text ska visas i och det som ofta används är till exempel Arial, Times New Roman m.fl. Numera använder sig även många utav Google Fonts som sammarbetar tillsammans med hemsidan istället ladda ett befintligt typsnitt som redan finns i användarens dator. Detta gör att det blit enklare för designern att slippa fundera över vilka som har ett visst typsnitt på sin dator.
+            </p>
+            <h3>Serif</h3>
+            <p>	Serif fonter passar in på dokument som har mycket text. Det sägs att denna font gör det lättare för läsaren att läsa, eftersom serifs små fötter instruerar ögat från bokstav till bokstav. Exempel på Serif-fonts är: Times, Times New Roman och Georgia.
+            </p>
+            <h3>Sand-serif</h3>
+            <p>	Denna fonter används mycket för rubriker, eftersom den har ett stilrent utseende. Några exempel är, Arial, Helvetica, Verdana. 
+            </p>
+            <h3>Monospace</h3>
+            <p>Monospace används för att visa kod i dokumentet, därmed visas varje bokstav i en font som är på samma bredd. Exempel är, Courier New och Courier.
+            </p>
+            <h2>Enheter</h2>
+            <p>Genom font-size anges storleken på fonten, därmed kan man ange storlek i en av de varierande storleksenheterna som befinner sig i CSS, samt ange nykelord. 
+            De nykelord som finns är xx-small(9 pixlar), x-small(10 pixlar), small(13 pixlar), medium(16 pixlar), large(18 pixlar), x-large(24 pixlar) och xx-large(32 pixlar).
+			Webbläsarens grundstorlek är font medium och nedanför visas exempel på hur x-small kan se ut.
+                <table>
+                <tr><td>x-small</td><td>10 pixlar</td><td><p id="fontSizeEx1">Nu lär vi oss CSS </p></td></tr>
+                </table>
+            
+            <h3>% och em</h3>
+            <p>Procent i webbläsaren har en standradstorlek för text, oftast är det 16 pixklar. Att ange % kan textstorleken modifieras utifrån standardstorleken som kan kan till exempel vara 100 % som står för 16 pixlar. 
+            Em fungerar som procent, till exempel 1em = 100%, 3em=300%, etc.
+           </p>
+            <h2>Utseende (color, font och list-style)</h2>
+            <h3>Color</h3>
+            <p> Egenskapen <code>color</code> medför att färgen på texten kan ändras på webbsidan. Några få färger kan ändras genom att texta namnet på färgen på engelska, men om man vill ha en mer specifikt färg, används hexadecimaler för färgkoderna. Om en paragraf till exempel ska vara svart kan det se ut såhär:
+            <br>
+            <code>
+            p { color:#000000; 
+             <br>   }
+            </code>
+            <br>eller
+            <br><code>
+            p { color: black; 
+            <br>   }
+                </code>
+            </p>
+            <h3>Font</h3>
+            <p>Med font kan det väljas olika typsnitt, alltså kan man styra flera aspekter med hur texten ska formas.
+                Det är bra att används font-family för att definera ett visst typsnitt, font-sixe för storlek och font-weight för tjockleken på texten, exemplet nedanför visar hur syntaxen kan se ut (sista raden är sortleken och färgen:
+            <br>
+            <pre><code>
+p
+{
+font-family: Times New Roman;
+font-weight: normal;
+font-size:100%;
+color:black;
+}
+#fontSizeEx2 { font-size:large; color:#FF69B4; }
+               </code></pre>
+                <br>
+                Exempelet som det faktiskt ser ut i dokumentet:
+                <br>
+                <p id="fontSizeEx2"> <span>Nu lär vi oss CSS </span>
+                </p>
+            <h3>List-style</h3>
+            <p>Med list-style kan det defineras en listas egenskaper, därmed olika typer av punkter, samt positionen på listan. Det går även att infoga en bild istället för de olika standardpunkterna. 
+            Här är ett exempel på fyrkantspunkter:
+            </p>
+            <pre><code>
+    ul
+{
+list-style-type: square;
+}
+</code></pre>
+            
+        <ul id="liststyle1">
+            <li>HEJ</li>
+            <li>PÅ</li>
+            <li>DIG</li>
+        </ul>  
+        </article>
+	</body>
+</html>

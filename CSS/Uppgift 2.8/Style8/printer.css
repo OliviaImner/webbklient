@@ -1,0 +1,19 @@
+body{
+	width:90%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+    background-color: bisque;
+} 
+
+h1{
+	font-size: 2em;
+	margin: 5px 0;
+	font-weight: bold;
+}
+@page {
+size: portrait;
+}
+@media print {
+    
+}

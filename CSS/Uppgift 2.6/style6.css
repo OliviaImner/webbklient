@@ -1,0 +1,57 @@
+body{
+	width:60%;
+	margin-left: 20%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+.tabellauto {
+	table-layout:auto;
+	text-align:left;
+	border-spacing:2px;
+	font-family: sans-serif;
+    float: left;
+}
+.tabellauto th {
+	padding:5px;
+	border: 1px solid black;
+	background: lightgreen;
+}
+
+.tabellauto td {
+	padding:5px;
+	border: 1px solid black;
+}
+.tabellfixed {
+    table-layout:fixed;
+    width: 60%;
+	text-align:left;
+	border-spacing:2px;
+	font-family: sans-serif;
+	word-wrap:break-word;
+    float:right;
+}
+
+.tabellfixed th {
+	padding:5px;
+	border: 1px solid black;
+	background: gray;
+}
+
+.tabellfixed td {
+	padding:5px;
+	border: 1px solid black;
+}
+.input1{
+    background-color: #13081A;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #FFF;
+    border-radius: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: inset 0px 0px 15px #FFF;
+    font-family: 'Verdana', sans-serif;
+    color: aliceblue;
+    cursor: pointer;
+}

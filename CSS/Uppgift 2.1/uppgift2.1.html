@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title>  2.1 Grunderna i CSS 3 </title>
+</head>
+	<body>
+		<h2> Grunderna i CSS 3 </h2>
+		<br>
+		<article>
+			<h3>Externt länkad CSS-fil och dess fördelar</h3>
+			<p>	I CSS finns det ett externt och ett internt style sheets. Ett internt style sheets är dokumentets style i det             befintliga dokumentet, t.ex. skrivs det i CSS som <code>&lt;style&gt;</code>-taggen direkt i HTML-dokumentet.
+			 Det externa är ett länkat style sheet och CSS skrivs då i ett separat style sheet-dokument som sedan anges i HTML-dokumentet. Det externa sättat är ofta att föredra, eftersom det blir enklare för användare och utvecklare att ladda webbsidan. 
+			 Ett exempel kan vara att webbsidan är blå och det bestäms att den ska byta färg till röd, om då CSS intern används måste varje HTML-dokument besökas för att genomgå förändringarna av färg och därmed blir det ett väldigt tidskrävande och lätt att missa andra webbsidor.
+			 Att istället använda externt CSS-dokument som även de flesta HTML-sidor använder sig av, behöves bara en ändring göras av färg i koden och därefter kommer förändringen ske på alla HTML-sidor.
+			 Ett externt style sheet-dokument gör även att dokumentstorleken förminskas för HTML-dokumenten, eftersom mycket kod flyttas ut från många HTML-dokument och att allt lagras i ett eget dokument.
+			</p>  
+            <h3>CSS-filens uppbyggnad</h3>
+            <p>Uppbyggnaden av CSS-filen består av selektorer, deklarationer, egenskaper och värden. 
+                Med en selektor kan det delas upp i vilka delar man vill designa och ge ett bra utseedne till. Det kan beskrivas som att den hae likande egenskaper som HTML-taggen har. Selektorer kommer gå igenom mer ingående längre ner på denna sida.
+                En deklaration är när det tilldelas ett utseende till selektorn. Detta är alltså ett sätt att peka till att selektorn ska vara till exempel "blå", det behöver uttryckas i text för att det ska fungera (exemepl, "color:blue"). I detta fall är <code>color</code> det som kallas en egenskap och <code>blue</code> är ett värde. Exemplet nedanför visar hur det kan se ut: 
+            <br/>
+            <br/><code>p {
+                color: blue;
+                }</code>
+                <br/>
+                <br/>p = selektor
+                <br/>color = egenskap
+                <br/>blue = värde
+            </p>
+			<h4>Arv</h4>
+			<p>
+			När ett HTML-dokument skapas placerar det ut en eller flera taggar inuti andra HTML-taggar, de omger alltså varandra. 
+			Detta bygger en relation mellan taggarna som kallas arv och kan användas för att designa dokumentet med hjälp av CSS. 
+			Det kan vara bra när ett attribut ska delas till alla taggar som finns inuti <code>body</code>-taggen. 
+			Ett vanligt utförande genom att använda arv, är att använda samma typsnitt för alla taggar inom body. 
+			Detta ger ett övergripande syn på att all text har samma typsnitt och blir enklare för användaren att läsa och lättare för utvecklaren att designa. 
+			</p>
+			<h4>Cascade</h4>
+			<p>
+			Det kan förekomma att en HTML-tagg får uppsättningar som är dubbla av CSS-deklarationer, det kan hända om utvecklaren har försett taggen med ett visst utseende, parallelt som den ärver ett utseende från en av föräldrar-taggen. 
+			Eftersom detta kan förekomma så hjälper Cascade till med att berätta för webbläsarens besökare vilken deklaration som de ska utnyttja sig av.
+			Ifall HTML-taggen har blivit tilldelad en stil så är det den som är avsedd att gälla, annars är det den närmaste ärvda deklarationen som är giltig.
+			</p>
+			<h4>Selektor</h4>
+			<p>
+			Selektorer används i CSS för att genom att gå ihop med att välja ut specifika element i ett HTMl-dokument. 
+			Det som väljs ut kan växla mellan att till exempel ange att ett HTML-element ska se ut på ett visst vis eller att välja ut det sista ordet på varje rad. 
+			Det finns många olika selektorer som kan förenas på olika sätt, samt att de olika selektorerna rankade på olika detaljerade sätt.
+			Eftersom vissa rankade CSS-regler är validerade med ett högre värde kan de skriva över andra CSS-regler. 
+			Ett exempel är hur olika operander i matematiken kan ha förtur framför andra (division före subtraktion). 
+			Det finns många CSS-regler där elementen matchar med andra element och deras egenskaper specificerar vilka värden som de slutligen ger.
+			</p>
+			<h5>Taggselektorer</h5>
+			Att använda namnet på en viss HTML-tagg i CSS-filen gör att det kan bestämma utseendet på sidan. 
+			Det går även att använda samma utseende för flera olika HTML-taggar, genom att bara namnge dem i CSS-filen (separerat med ett kommatecken).
+
+			<h5>Attributselektorer</h5>
+			<p>En attributselektor kan tilldela en viss stil till HTML-taggar som är först och främst av samma sort och delar även ett specifikt attribut.
+			För att använda denna selektor behövs det en HTML-tagg följt av attributet i CSS-filen, därefter kan alla länkar ge samma typ av stil. 
+			Det allmäna attributet skrivs på detta sätt:<br>
+			a[href^=”http://”]
+			</p>
+			<h5>Klasselektorer</h5>
+			<p>En klasselektor hjälper till med att tilldela utvalda delar av dokumentet ett visst utseende.
+			Detta verkställs genom att markera ut de delar och berätta att de tillhör samma klass i HTML-dokumentet. 
+			Det skrivs med texten class="namn" (namn är lika med namnet på klassen). Därefter kopplas den tillsammans med CSS-filen, 
+			genom att skriva en punkt före klassnamnet, det kan se ut såhär:
+
+			.klassnamn { }
+			</p>
+			<h5>ID-selektorer</h5>
+			<p>ID-selektorer arbetar på samma sätt som klasselektorer, däremot anges selektoren    genom id=namn i HTML-dokumentet och #namn { } i CSS-filen.
+			   Klasselektorer används mer regelbundet idag jämfört med id-selektorer, dock är det bra att ha koll på att id-selektorer är bra att ha när man skriver i Javascript.
+			   Detta är eftersom Javascript använder sig av att identifiera ett visst område på webbsidan.
+			</p>
+			<h5>Barnselektorer</h5>
+			<p>En barnselektor betyder att en HTML-tagg omges av en annan HTML-tagg, detta kallas för ett barn. 
+			Den omslutande taggen kalls för förälder och innebär att för att föräldern ska komma åt barnet behövs det först skrivas in förälderns namn och därefter barnets namn i CSS-filen. 
+			Det ser ut på det här sättet: <br>
+			förälder > barn { } <br>
+			Detta sätt påverkar inte allt inom föräldern eller när barnet framkommer, utan bara när denna sammankoppling uppträder.
+			</p>
+            <h4>Enheter</h4>
+			<p>När textstorlek och avstånd mellan olika element ska ställas in i HTML-dokumentet behövs det användas av måttenheter. 
+			Måttenheterna är uppdelade i två kategorier, absoluta och relativa.
+			</p>
+			<h5>Absoluta</h5>
+			<p>De absoluta måttenheter visar den exakta storleken som uppges i HTML-dokumentet. 
+			Dessa är in (inches), cm (centimeter), mm (milimeter), pt (punkter), pc (picas), px(pixlar, storleken som visas avgörs av upplösningen på skärmen).
+			</p>
+			<h5>Relativa</h5>
+			<p>Relativa måttenheter används för att anpassa textstorleken efter lämpliga saker i dess omgivning. Det innebär att 
+            <h6>ex</h6>
+            <p>ex står för x-height och används inte så mycket nuförtiden. Storleken anges med; ex och är relativ till den aktuella textstorleken i elementet.
+            </p>
+            <h6>%</h6>
+            <p>Den standardstorlek för text i webbläsaren är vanligtvis 16 pixlar. Detta anges genom symbolen % och med att modifiera textstorleken utifrån den standardstorleken. Som ett exempel är 100% alltså den samma som 16px. 
+            </p>
+            <h6>em</h6>
+            <p>Em fungerar på samma sätt som %. 1em = 100%, 5em = 50% osv. Em har blivit mer vanligare när det gäller måttenhet. 
+            </p>
+			
+		
+		</article>
+    </body>
+</html>

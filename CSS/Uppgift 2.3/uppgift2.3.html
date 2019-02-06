@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title> Olivia Imner 2.3 </title>
+        <link rel="stylesheet" href="style3.css"
+              >
+
+</head>
+	<body>
+        <article>
+            <h2>Marginaler</h2>
+            <p>Marginaler i CSS har syntaxen margin och sätter hur stort avståndet ska vara mellan HTML-taggar. Om till exempel en rubrik ska ha 10 pixlar mellan sig, samt den nedanfäljande paragrafen visas syntaxen på detta viss:
+            <code>h1{margin-bottom:10px;}</code>
+            <br>
+            Eftersom att avståendet kan enkelt ställas in i olika riktningar, så kan den ändras med margin-bottom, margin-top, margin-left och margin-right. Det går även att skriva in alla avstånd på en och samma rad, då ser det ut såhär:
+            <br> 
+                <code>margin: 10px, 5px, 10px, 5px;</code>
+            <br>
+            Ordningen på raden är följande, margin: margin-top margin-right margin-bottom margin-left;
+            </p>
+            <h2>Padding</h2>
+            <p>
+            Padding används för att läggat ill avstånd mellan HTML-taggarna innehåll och taggens kant. Detta används om till exempel en paragraf ska skapas och vara lättläst för läsaren. Det blir alltså enklare för läsaren om det finns mellanrum mellan textraden och den yttre kanten av bakgrundsbilden. 
+            Padding används likadant som margin, se exemplet nedanför:
+            <br>
+                <code>padding: 5px 1px 3px 4px; </code>
+            </p>
+            <h2>Kantlinjer</h2>
+            <p>Med kantlinjer kan det skapas en ram runt HTML-taggarna, detta genomförs genom att använda border. Kanten kan placeras med hjälp av border-top, border-right, border-bottom och border-left. Det betyder att ramen behöver inte visas runt alla kanter, utan det kan placeras hur man vill. Ramen/kanten kan även ha färg och det bestäms genom syntaxen border-top-color, border-right-color, border-bottom-color och border-left-color (se exempelet nedanför, där färg har fylt nedre delen av varje box).
+            För att ändra färg används för det mesta hexadecimaler, och med de olika border placeringarna kan även olika färger sättas på kanterna. Storleken på ramen/kanten ställs med syntaxen border-width, samt är det även samma måttenheter som ställs in för textstorlek. Det finns även olika stilar (border-styles) som kan väljas med border, nedanför visas varianterna som kan väljas:
+            </p>
+            
+            <p class="solid">Solid</p>
+            <p class="dotted">Dotted</p>
+            <p class="dashed">Dashed</p>
+            <p class="double">Double</p>
+            <p class="groove">Groove</p>
+            <p class="ridge">Ridge</p>
+            <p class="inset">Inset</p>
+            <p class="outset">Outset</p>   
+                
+           <h2>Outline</h2>
+            <p>Outline liknar border, eftersom det går att skapa ram/kanter med den. De skillnader som finns mellan outline och border är att taggen är bredare, samt att det inte läggs till några pixlar som behövs för border. I outline markeras pixlarna som redan finns med taggen, beroende vilket färg och stil som valts. Med outline-color finns det möjlighet att fylla "invert", som är motsatsfärgen till den valda färgen. Det är alltså den yttre kanten som blir ifylld med outline, därmed är outline ett smart sätt att arbeta med om det finns redan ett begränsat område. 
+            Här är ett exempel som visar att bakrunden är vit och det har en svart kan på 5 pixlar:
+            </p>
+
+<pre><code>
+box{
+outline-color: invert;
+outline-style: solid;
+outline-width: 5px;
+}
+</code></pre>
+            
+            <p class="box">Invert exempel</p>
+            <br>
+            <br>
+            <br>
+            <h2>Synlighet</h2>
+            <p><code><b>Visability</b></code> handlar om att det kan bestämas om något ska visas eller döljas på webbsidan. 
+                <code>Visibility: hidden;</code> Döljer elementet för användaren och visar bara ett blankt område. 
+                <code> Visibility: display;</code> Visar elementet för användaren och ger de möjlighet att integrera med webbsidan. Det kan till exempel användas när det ska visas något förens användaren drar muspekaren över elementet.  
+                
+                Egenskapen <code><b>display</b></code>, gör samma sak som visiblity, alltså döljer och visar element. Det som skijer sig emellan dem är att display inte lämnar någor tomt område eftersig, utan den raderar elementen helt, tills det bestäms att det ska visas igen. Display har även mer värden än vad visiblitiy har, som till exempel kontroll över hur elementet ska visas. 
+                Värdet <code>block</code> hanterar att ett element inte delar rad med andra element. Värdet <code>inline</code> hanterar de element som ligger på samma rad och värdet <code>inline-block</code> liknar värdet inline förutom att höjd och en bredd har lagts till nu.
+
+                Såhär kan egenskapen display se ut med olika värden:
+                </p>
+   <pre><code>
+display: none;
+display: block;
+display: inline;
+display: inline-block;
+</code></pre>             
+
+                <p>
+                <code><b>Clip-path</b> </code> används för att skapa ett område som ska klippas och definerar det område som ska visas av elementet. Alltså att de delar som ligger innanför regionen visas och de utaför fröblir dolda. Den clip-regionen fungerar som en sökväg och anges antingen som en URL referens inline eller en extren svg och kan även vara i en form av till exempel en cirkel. 
+                             
+                Såhär kan det se ut:
+                </p>
+                <pre><code>
+.clip {
+  clip-path: url(bild1.svg#c1);
+}</code></pre>
+
+                
+                <br>
+                <p>
+                För att kunna beskära bilden måste det talas om i vilken form den ska ha, detta hanteras med <code>rect</code>. Dock är rect det enda som kan väljas som form, men det går att lösas om den ska skrivas ut. 
+                
+                    
+                För att styra hur innehållet ska hanteras om det inte finns plats, används egenskapen <code><b>overflow</b></code>. Denna egenskap ordnar så att bilden hanteras till rätt storlek för området. Det finns även flera värden som kan användas tillsammans med overflow, auto, hidden, scroll och visible. Overflow visar flödet med visible, scroll hanterar scrollfunktion, auto lägger till scrollfunktionen, samt döljer hidden allt i overflow. 
+                Såhär kan auto se ut in-action:
+                </p>
+            <pre><code>
+p	{
+overflow: auto;
+} 
+</code></pre>   
+            <h2> Transparens</h2>
+            <p> Transparanthet är till för att göra saker genomskinligt på en webbsida. Detta genomförs genom att göra en klass i CSS, med en bakgrund färg med hjälp av rgba (red green blue alpha) och en procentsats som bestämmer hur elementet ska visas. Nedanför visas syntaxen för exempel 1 och därefter hur det ser ut i dokumentet med 50 %  synlighet och 20 % synlighet. 
+<pre><code>
+.info1 {
+background-color: rgba(30, 153, 153, .5);
+}
+</code></pre>
+            <p><b>Exempel 1</b></p>
+            <div class="info1">Hej</div> 
+            <br>
+            <br>
+            <p><b>Exempel 2</b></p>
+            <div class="info2">Hej</div>
+            <br>
+            <br>
+            <p>Transparanthet kan även visas genom att hela området blir skuggat, detta skrivs med syntaxen "opacity: 0.5;". Opacity beskrivs i olika levels, där 1 är likamed att det inte är någon genomskinlighet och 0 har full genomskinlighet. 
+            <br>
+                <b>Exempel på opacity:</b></p>
+            <pre><code>
+.info3 {
+    background-color: #267272;
+    opacity: .3;
+    float:left;
+	padding:1em;
+}</code></pre>
+            <div class="info3">Hej</div>
+            <br>
+            <br>
+            <br>
+            <h2>Runda hörn</h2>
+            <p><code>Border-radius</code> används för att skapa en ruta med rundade hörn. Det genomförs med hjälpa av pixlar som ställer in hur mycket de rundade hörnen ska vara. I exempelet visas det hur alla hörnen är rundade. </p>
+            <div class="info4">Rundade hörn</div>
+ <pre><code>             
+.info4 {
+background-color: rgba(255,204,255, .5);
+border-radius: 10px;
+padding:10px;
+}
+</code></pre>
+        
+    
+            <p>
+                Om det anges fler pixlar i border-radius blir det mer rundade hörn och detta fungerar ungefär som margin med att allt blir samlat i en egenskap. Det kan även vara olika storlekar på de rundade hörnen, detta finns i exempelt nedanför. 
+            </p>
+            <div class="info5">Olika rundade hörn</div>
+
+<pre><code>
+.info5{
+border-top-left-radius: 5px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 1px;
+border-bottom-right-radius: 20px; 
+}
+</code></pre>
+            <h2>Bakgrunsbilder</h2>
+            <p>Det går att tilldela flera bilder till ett och samma element. Nedanför finns ett exempel på hur det kan gå till:</p>
+            
+
+<pre><code>            
+.info6 {
+background: url('forst1.jpg'), url('forest.jpeg');
+}
+</code></pre>               
+            <div class="info7"></div>
+            <p>Det går även att sätta samman två bilder, de smälter då samman i varnadra och skapar en bild. Syntaxen nedanför visar hur background-blend-mode skapar en dubbelbild och till höger är resultatet. Det kan även väljas olika alternativ på hur bilden ska smältas in tillsammans. Dessa är, color-dodge, color-burn, headlight, multiply, screen. overlay, darken, lighten, soft-light, difference, exclusion, hue, saturation, color och till sist luminosity. Det finns även standardvärden normalt, dock blir det inte bilderna smälter sammamn. Bilden till höger visar  background-blend-mode.  </p>
+            
+<pre><code>
+.info7 {
+background: url('forest1.jpg'), url('forest2.jpg');
+background-blend-mode: screen;
+}
+  </code></pre>
+            <h2>Skuggor</h2>
+            <p>Skuggor kan läggas till för elementen och det görs via egenskapen box-shadow. Med box-shadow tillkommer olika varianter av hur skuggor ska visas. Nedanför i exempelt visas hur skuggor kan läggas till runt hela elementet. </p>
+            <div class="info8">Skuggor</div>
+<pre><code>
+.info8 {
+background-color: #267272;
+box-shadow: 5px 7px 10px #999999;
+}
+</code></pre>
+            <p> På raden box shadow finns det 3 olika pixlar, den första står för hur mycket skuggan ska synas på vänster sida (5px), den andra står för hur mycket skugga som ska finns nedtill och till höger (7px) och till slut står den tredje för hur mycket spridning skuggan ska ha (10px). Hexadecimalen står för vilken färg skuggan ska ha. </p>
+        
+            <h2>Gradient</h2>
+            <p>Eftersom att det går att bestämma bakgrund i elementet är det inte begränsat till vilken färg, bild, eller bilder som ska väljas. Med gradient kan det bestämmas fler färger, med linear-gradient och radial-gradient. Dessa egenskaper kan ställa in en övergång mellan flera färger. 
+            <br>
+            Exempel på linear-gradient:</p>
+            <div class="info9">Skuggor</div>
+            
+<pre><code>           
+.info9 {
+background-image: linear-gradient(to left, #000000, #FFFFFF);
+}
+</code></pre> 
+            
+  <p>Det som bestäms av webbläsaren är att bakgrunden är en linjär gradient och att den börjar från höger med grön färg och fortsätter till vit fram till vänster kant. 
+      <br>Exempel på radial-gradient: </p>          
+ 
+            <div class="info10">Skuggor</div>
+
+<pre><code>
+info10 {
+background-image: radial-gradient(#000000, #FFFFFF);
+}
+</code></pre>
+            <p>Det radial-gradient gör är att från mitten ändra färg från grön till vit på ytterkanterna. Det finns fler värden som kan användas för att välja olika linjära mönster i elementet, dock ingår de inte i grunderna för CSS3. </p>
+
+            <!--<div class="box">
+                <h5>Solid</h5>
+            </div> --> 
+            
+        </article>
+
+  
+		
+	</body>
+</html>

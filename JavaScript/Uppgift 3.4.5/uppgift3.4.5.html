@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="sv">
+	<head>
+        <meta charset= "UTF-8">
+		<title>Olivia Imner 3.4.5</title>
+
+		<link rel="stylesheet" href="style3.4.5.css">
+
+		<script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+		<script src="jquery.validate.min.js"></script>
+		<script src="main.js"></script>
+	</head>
+	<body>
+        <h1>Formulärhantering</h1>
+        <p>Fyll i alla fälten i formuläret!</p>
+	<form id="signingUp" method="get" action="#">
+    	<div>
+            <br>
+			<label for="username">Användarnamn:</label>
+			<input type="text" id="username" name="username">
+
+		</div>
+		<div>
+			<label for="password">Lösenord:</label>
+			<input type="password" id="password" name="password">
+		</div>
+        
+        <div>
+			<label for="name">Namn:</label>
+			<input type="text" id="name" name="name">
+		</div>
+        
+		<div>
+			<label for="email">Mail:</label>
+			<input type="text" id="email" name="email">
+		</div>
+        
+        <br>
+		<div>
+			<span class="label">Vilket husdjur vill du helst ha?:</span>
+			Hund<input type="radio" name="djur" value="Hund">
+			Katt<input type="radio" name="djur" value="Katt">
+			Inget<input type="radio" name="djur" value="Inget">
+		</div>
+		<div>
+			<span class="label">Vilka språk kan du?:</span>
+			JavaScript<input type="checkbox" name="lang" value="JS">
+			Java<input type="checkbox" name="lang" value="Java">
+			R<input type="checkbox" name="lang" value="R">
+		</div>
+        <br>
+		<div>
+			<label></label>
+			<input type="submit" id="submitBtn" value="Skicka">
+		</div>
+		<div id="status"></div>
+		
+    </form>
+    </body>
+</html>

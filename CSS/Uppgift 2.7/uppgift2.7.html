@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title> Olivia Imner 2.7 </title>
+     <link rel="stylesheet" href="Style7/style7.1.css">
+
+</head>
+	<body>
+        <article>
+            <h2>Sidlayout</h2>
+      
+        <section>
+                <h3>Vad är sidlayout i HTML och CSS</h3>>
+                <p> Förr var det vanligt att webbsidor strukturerades med hjälp av tabeller, eftersom det var enkelt och tabeller hade ungefär en form som tycktes funka. Med HTML-taggar har det utformats en bättre och tydligare struktur på webbsidor och några exempel på det är nav, article och header. Det har även blivit att CSS har kommit mer till hands när det gäller utseedent på webbsidor. Med CSS kan det bestämmas var HTML-taggarna ska visas eller inte, samt vilken bakgrundsfärg, text, och avståd mellan taggar, etc. Det har medfört att det finns fler alternativ att välja på idag än vad som fanns förr. 
+            
+                </p>
+        </section>
+        <section>
+            <h3>Webbsideslayout - fixerad</h3>
+                <p>En fixerad layout är lättste att utveckla webbsidan till, eftersom elementen har specifika mått. Det behöver inte vara en positiv egenskap, utan det kan uppkomma problem i fall en användare till exempel andvänder sin mobil, medans webbsidan inte är anpassad för bruk med mobiltelefon. Detta kan medföra att användaren får scrolla sig igenom en hel webbsida som är anpassad för datorer och att texten också blir svår att läsa eftersom den är anpassad till en större skärm och blir då för liten i mobilen.
+            
+            <h3>Webbsideslayout - flytande</h3>
+                <p>En flytande webbsideslayout anpassar sig till vilken storlek webbläsaren har. Det gör den genom att använda relativa mått som procent, istället för absoluta mått som pixlar. Det kan även här uppkomma problem med flytande webbsideslayout, eftersom på riktigt stora skärmar räcker det inte till. </p>
+                 
+            <h3>Webbsideslayout - elastik</h3>   
+                <p>Elstisk webbsideslayout är en blandning mellan fixerad och flytande layout. Den arbetar med att ändra storlek på alla element med hjälp av<code>em</code> och är en kvadrat med en fontstorlek. Fontstorleken variera mellan olika webbsidor, det gör att <code>em</code> är en relativ enhet som förändras beroende på användarens textstorlek. Det som händer är att elastika layouter använder "media quries" för att skicka ut varierande designs till olika webbsidor, eftersom de finns olika storlekar på fönsterbredden. Detta har även sina problem, eftersom det krävs mycket förståelse och testing för att få en layout som passar till alla användere. 
+                </p>
+        </section>
+        <section>
+            <h3>Positioner</h3>
+            <p>Det finns olika egenskaper som positionerar ut elementen på webbsidan, genom till exempel avstånd eller var de ska visas i dokumentet. <b>Position</b> är en egenskap som bestämmer hur ett element ska avkastas på webbsidan och nyckelordet <b>absolute</b> placerar ut en relativ position till sin föräldrars placering. <b>Static</b> är ett standardvärdet för position och medför i vilken ordning elementen ska visas i beroende på hur HTML-taggarna befinner sig i dokumentet. <b>Fixed</b> är ett nyckelord för att kunna specifikt bestämma en plats för elementet beroende på hur webbläsaren är uppbyggt, det som händer är att elementet stannar på sin plats oavsett om användaren scrollar ned på webbsidan. Med <b>relative</b> kan elementet placeras ut relativt till sin faktiska plats. I exemplet nedanför placeras elementet <code>section</code> 20 pixlar nedåt än vad den egentligen befinner sig utan <code>position</code> egenskapen.</p>
+<pre><code>
+section {
+position: relative;
+top: 20px;
+}
+</code></pre>   
+            <p><b>Top</b> är en egenskap som bestämmer var den övre kanten av elementet ska placeras på webbsidan och i exemplet ovan är det var det relativt positionerade element sätter den övre egenskapen, på den övre kanten av ett element på en enhet, samt om det är ovanför eller under dess normala position.
+            <b>Left</b> är en egenskap som ställer in positionen att vara från vänster sida. Nedanför är ett exempel på hur <code>section</code> kommer att visas med 200 pixlar till vänster om sin ursprungliga position.</p>
+<pre><code>
+section {
+position: relative;
+left: 200px;
+}
+</code></pre>
+        
+            <p><b>Bottom</b> är en egenskap som ställer in en position med att utgångspunkten är den nedre kanten av elementet. Den här placeringen av positionen visar att <code>section</code> har 150 pixlar högre upp än vad den skulle gjort annars.
+<pre><code>
+section {
+position: relative;
+bottom: 150px;
+}
+</code></pre>
+            <p><b>Right</b>är en egenskap som ställer in positionen utifrån höger sida. I exemplet nedan placeras <code>section</code> 200 pixlar ifrån webbläsarens högerkant.</p>
+<pre><code>
+section {
+position: fixed;
+right: 200px;
+}
+</code></pre>
+            <p><b>Z-index</b> är en egenskap som ställer in i vilken ordning elementen ska ha. Om detta inte ställs in kan elementen hamna på varandra. </p>
+			<b>Float</b> är en egenskap som hanterar hur flödet ska hålla sig till vänster (<code>left</code>) eller höger (<code>right</code>) på webbsidan. Det finns även värdet <code>none</code> som betyder att inget ska hända med flödet. I exemplet nedanför är syntaxen för att använda <code> float</code>. 
+<pre><code>
+aside {
+float: right;
+}
+
+article {
+float: left;
+}</code></pre>
+            <p><b>Clear</b>är en egenskap som "flytta ner" de element som flyttas atomatiskt till höger om till exempel <code>float: left;</code> andvänds. Clear kan vara bra att använda i <code>footer</code>, om den ska förflyttas längst ner på sidan och inte bara till höger om artikeln i dokumnetet. Värdet <code>both</code> som står efter clear, är att flytande element inte ska förekomma på båda sidorna, det går också att skriva left och right. I exemplet nedanför är syntaxen för detta ser ur såhär:</p>
+<pre><code>
+footer {
+clear: both;
+}</code></pre>
+        </section>
+        <section>
+            <h3>Storlek</h3>
+            <p><b>Width</b> är en egenskap som bestämmer bredden på elementet. Det görs genom att måttenheter i % anges och elementet anpassar sig då därefter på vilken enhet den visas på. Det går även att använda pixlar för att ange bredden och pixlarna blir exakt som det som angetts, och är inte påverkad av vilken enhet den visas på. I exempelet visas syntaxen:</p>
+<pre><code>
+article {
+width: 60%;
+}
+</code></pre>
+            <p><b>Height</b> bestämmer höjden för ett element och använder samma värden som när width sätts. </p>
+            
+<pre><code>
+.bild {
+height: 132px;
+}
+</code></pre>
+        <p><b>Max-width</b> anger största maxbredden som ett element kan anta. Ett exempel är när ett mått har angetts, men detta påverkas av hur skärmstorleken är på enheten, då kan måttet specifiseras med maxbredd så att måttet inte är större än det absoluta måttet. I exemplet nedanför visar det hur en footer är inställd till att ha en maxbredd på 100 em.</p>
+    <pre><code>
+ footer {
+max-width: 100em;
+}
+    </code></pre>
+        <p><b>Max-height</b> används för att ställa in den maximala höjden på ett element. Egenskapen fungarar precis som max-width, men bara att det är på höjden av elementet. För att ställa in max höjden, kolla exempelt nedanför. </p>
+<pre><code>
+header {
+max-height: 10em;
+}
+</code></pre>
+        <p><b>Min-width</b> egenskapen används för att ställa in den minsta bredden som elemtet kan anta. Om elementet sätt till ett för litet mått, kan det förekomma att det är svårt förstå innehållet. Minsta bredden kan ställs in som i exempelet nedanför. tillåter dig att ställa in den minsta bredden som ett element kan anta. </p>
+<pre><code>
+article {
+min-width: 200px;
+}
+</code></pre>
+            <p><b>Min-height</b> egenskapen tillåter att ställa in den minsta höjden som ett element kan anta. I exemplet visas hur en header kan ställas in med minsta höjden på 5em.</p>
+<pre><code>
+header {
+min-height: 5em;
+}</code></pre>
+            
+            <p><b>Vertical-align</b> egenskapen bestämmer hur element ska justeras vertikalt. Den kan följa baslinjen eller kan det placeras under den, det är helt upp till designaren att bestämma. Detta är bra att använda när det ska justeras med bilder på webbsidan. I exemplet visas det hur en bild ställs in att ligga i mitten av föräldar elementet. </p>
+<pre><code>
+img {
+vertical-align: middle;
+}
+</code></pre>
+        </section>
+        
+            <a href ="Fixed.html">En fixerad webbsida</a><br>
+            <a href ="Flytande.html">En flytande webbsida</a><br>
+            <a href ="Elastisk.html">En elastisk webbsida</a>
+            <a href ="textflode.html">Textflöde</a>
+
+        </article>
+	</body>
+</html>

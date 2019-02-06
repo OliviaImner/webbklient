@@ -1,0 +1,34 @@
+body{
+	width:90%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+header {
+	padding: 0 12px;
+    color:cadetblue;
+}
+
+.content1 {
+	width: 20%;
+	float: left;
+	padding: 5px 15px;
+}
+.content2{
+	width: 60%; /* Account for margins + border values */
+	float: none;
+	padding: 5px 15px;
+    
+}
+.content3 {
+	width: 20%;
+	padding: 5px 15px;
+	float: right;
+ 
+}
+img{
+    border: 2px solid #ddd;
+    border-radius: 200px;
+    width: 50%;
+    float: left;  
+}

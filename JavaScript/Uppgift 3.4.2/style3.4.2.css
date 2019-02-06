@@ -1,0 +1,26 @@
+body{
+	width:70%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+
+img{
+    width: 500px;
+    height: 400px;
+}
+#drawingCanvas{
+	border: 1px solid darkblue;
+}
+canvas{
+    width: 500px;
+    height: 400px;
+}
+#save{
+	overflow: visible;
+	width: 75%;
+	border: 1px solid pink;
+	overflow: auto;
+	float: left;
+	word-wrap: break-word;
+}

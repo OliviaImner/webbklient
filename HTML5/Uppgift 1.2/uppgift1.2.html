@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title> Olivia Imner 1.2 </title>
+</head>
+<body>
+	<span style="color:green">Detta dokument kommer innehålla fakta om Zanzibar</span>.
+    <nav class="menu">
+
+    <a href="https://en.wikipedia.org/wiki/Main_Page">Wiki</a>
+    <a href="https://www.youtube.com">Youtube</a>
+    <a href="uppgift1.html">Olivia Imner 1.2</a>
+
+</nav>
+<article>
+
+ <header>
+   <h1>Uppgift 1.2 Semantiska element för struktur</h1>
+   <h2>Vad är element article?</h2>
+   <img src="HTML5_Logo.png" alt="HTML5_Logo" width="50" height="50"/><br>
+ </header>
+ 	<br>
+ 	Artikel-taggen specificeras genom <code><b>&lt;article&gt;</b></code> och det innebär att den representerar en beståndsdel på en sida,
+ 	som alltså består av en fristående sammanfattning i ett dokument, en sida, en webbsida eller en applikation. 
+	 Den är avsedd för att vara självständig när det gäller att vara fördelningsbar och återanvändbar,
+ 	exempel på detta är blogginlägg, tidningsartiklar, användarkommentarer, etc. 
+ 	Detta element ska bli identifierad med något av rubrikstorlekarna som finns (h1-h6) och ska vara ett subelement till <code>article</code>.
+    
+	<section>
+		<h2> Vad handlar elementet section, header och footer om?</h2>
+			Sektions elementet specificeras genom <code><b>&lt;section&gt;</b></code> och innebär att det är en fristående sektion av användbarhet i dokumentet. 
+			Detta inleds ofta med en rubrik och som inte har ett specifik element för att representera rubriken,
+ 			detta i form av rubrikstorlekarna som även används till elementet <code>article</code>. Många användare uppmuntrar att använda <code>article</code> istället för <code>section</code>, 
+ 			eftersom att det skulle vara meningsfullt att sammansluta innehållet i elementet. Det blir alltså enklare att internetanvändare kan prenumera på ett innehåll på en webbsida med taggarna <code>article</code>.
+ 			Exempel på sektioner i ett dokument kan vara att kapitel, delar i en uppsats, samt att en webbsida kan bli delad i sektioner som innehåller exempel instruktioner eller kontaktuppgifter, etc. 
+
+	
+            Header elementet som används i denna kod och även finns i det stora exemplet, innebär att den representerar ett innehåll med ett inledande av en grupper eller liknande navigationshjälpmedel. 
+            Det kan innehålla rubrik element men också logotyper för att inleda ett visst representerade innehåll. Elementet specificeras med taggen <code><b>&lt;header&gt;</b></code> och påminner mycket om taggen <code><b>&lt;head&gt;</b></code>, dock har det inte samma funktion.
+            Header-taggen kan även innehålla namn eller sökformulär och inte sidofliken för den befintliga sidan. 
+            Ett annat element som är bra att förstår sog på är <code><b>&lt;footer&gt;</b></code> och innebär att det skapas en sidofot för sektionsinnehållet eller sektionselementet.
+            En sidofot innehåller oftast information om författaren till avsnittet, eller 
+            länkar som relateras till ämnet, eller om det finns upphovsrätt till användning av sektionen, samt sidokartor (syntax exempel nedanför).
+
+Syntax exempel på det som har beskrivits ovanför:
+<pre><code> 
+
+&lt;article&gt;
+ &lt;header&gt;
+  
+   &lt;h1&gt;Uppgift 1.2 Semantiska element för struktur&lt;/h1&gt;
+   &lt;h2&gt;Vad är element article?&lt;/h2&gt;
+   &lt;img src="HTML5_Logo.png" alt="HTML5_Logo" width="50" height="50"/>&lt;/br&gt;
+ &lt;/header&gt;
+	&lt;section&gt;
+  	 &lt;h1&gt;Vad handlar elementet section, header och footer om? &lt;/h1&gt;
+  		&lt;p&gt;Samma innehåll som ovanför&lt;/p&gt;
+  		  &lt;footer&gt;
+  			&lt;p>Postat av: Olivia Imner&lt;/p&gt;
+  			&lt;p>Kontakt information: &lt;a href="mailto:olim9472@student.su.se"&gt;
+ 			olim9472@student.su.se&lt;/a&gt;.&lt;/p&gt;
+		 &lt;/footer&gt;
+        &lt;/p&gt;
+    &lt;/section&gt;
+&lt;/article&gt;
+</code> </pre> <br>
+Här är hur en footer skulle kunna se ut:<br>
+ <footer>
+  			<p>Postat av: Olivia Imner</p>
+  			<p>Kontakt information: <a href="mailto:olim9472@student.su.se">
+ 			 olim9472@student.su.se</a>.</p>
+ </footer>
+
+   
+    </section>
+    <section>
+     <h2>Vad handlar nav, figure och figcaption om?</h2>
+        I början av detta dokument finns det tre flikar, till olika länkar eller hemsidor detta görs genom elementet <code><b>&lt;nav&gt;</b></code>. Det innebär att den länkar till olika definitioner av uppsättningar av navigationslänkar.
+    	Dock ska inte alla navigationslänkar vara med i detta element utan  <code><b>&lt;nav&gt;</b></code> elementet ska bara kopplas till stora block av navigationslänkar. Alltså länkar <code><b>&lt;nav&gt;</b></code> till olika sektioner i dokumentet eller till hemsidor. 
+		Syntaxen ser ut såhär, 
+<pre><code> 
+&lt;nav class="Flikar"&gt;
+
+    &lt;a href="https://en.wikipedia.org/wiki/Main_Page">Wiki&lt;/a&gt;
+    &lt;a href="https://www.youtube.com">Youtube&lt;/a&gt;
+    &lt;a href="uppgift1.html">Olivia Imner 1.1&lt;/a&gt;
+
+&lt;/nav&gt;
+</code> </pre>
+
+
+
+		<code>&lt;figure&gt;</code> specificerar att det ska anges ett självständigt innehåll, alltså som illustrationer, foton, diagram och kodförteckningar etc. 
+		<code>&lt;figure&gt;</code> är relaterat till huvudflödet i dokumentet, samt är positionen av <code>&lt;figure&gt;</code> inte beroende av huvudflödet, så om taggen raderas påverkas inte flödet av dokumentet. 
+		Element <code>&lt;figcaption&gt;</code> definerar en bildtext till <code>&lt;figure&gt;</code> och kan därmed bli placerad i närheten av exempelvis en illustration. 
+		
+ <figure>
+  <img src="HTML5_2.png" alt="HTML5_2" width="200" height="200">
+<figcaption>HTML5 - Är det senaste standarden som definerar HTML!</figcaption>
+</figure>
+
+Här är syntaxen för exemplet ovanför:
+<pre><code>
+&lt;figure&gt;
+  &lt;img src="HTML5_2.png" alt="HTML5_2" width="200" height="200"&gt;
+  &lt;figcaption>HTML5 - Är det senaste standarden som definerar HTML!&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code> </pre>
+    </section>  
+    
+ <section>  
+ 	<h2> Vad handlar aside, details och summary om?</h2>
+ 		 <code>&lt;aside&gt;</code> specificerar ett innehåll som finns på sidan av vilket innehåll den ligger i för tillfället. 
+ 		 Den ska innehålla något som är relevant till resten av omgivande innehåll, ett bra exempel är när det ska citeras från en längre texter, då kan <code>&lt;aside&gt;</code> vara ett bra sätt att markera citatet.<br>
+ 		 Här är ett exempel, <br>
+ 		 <br>
+ 		 Zanzibar är ett delvis självstyrande örike i union med Förenade republiken Tanzania. Zanzibar har inre självstyre med egen konstitution, parlament, regering och president.
+ 		 Området som ligger utanför Tanzanias kust består av en arkipelag belägen i Indiska oceanen som inkluderar öarna Zanzibar, Pemba och några småöar, och har en maritim gräns mot Kenya i nordväst.
+		 Den totala arealen uppgår till 2 460 km².
+		 <aside><q><i>Dessa öar är i sin tur en del av de historiska så kallade Kryddöarna, vilka även omfattar den sydligare Mafiaön.</i></q></aside>Ögruppen har en lång historia som handelsnation i Indiska oceanen.
+		 Området utgjorde ett viktigt stopp längs med den kryddhandelsväg som gick mellan Indien, Afrika och Arabländer i förkoloniala tider. 
+		 Som ett resultat av detta blev även slavhandeln utbredd tills den upphörde i och med att Storbritannien tillförskansade sig området som ett protektorat år 1890.
+ 		 <br>
+ 		 <br>
+ 		 <code>&lt;details&gt;</code> specificerar ytterligare detaljer som användaren kan dölja eller visa på begäran. 
+ 		 Det används för att skapa interativa widget(icons, pull-down menus, buttons, selection boxes, progress indicators, on-off checkmarks, scroll bars, windows, window edges, etc.)
+ 		 som användaren kan öppna eller stänga. I <code>&lt;details&gt;</code> används en tagg som kallas  <code>&lt;summary&gt;</code> och är en rubrik av för vad <code>&lt;details&gt;</code> elementet innehåller (ett exempel visas nedanför, samt syntax efter).<br>
+ 		 <br>
+ 		 <details>
+  			<summary><b>Mer information om Zanzibar</b></summary>
+  				<p> Den totala folkmängden (inklusive Pemba) beräknas till 1 273 512 invånare år 2010.[4] På öarna Pemba och Zanzibar är huvuddelen av befolkningen afrikaner som härstammar från fastlandet, 
+  					men där finns också en grupp arabättlingar. Invandrade araber och perser har fört in arabiska och persiska traditioner. 
+ 					De har traditionellt försörjt sig på handel (inte minst slavhandel) och var det forna Zanzibarrikets överklass. På öarna lever även en minoritet av indisk och pakistansk härkomst.</p>
+
+		 </details>
+<pre><code> 
+&lt;details&gt;
+  &lt;summary&gt;Mer information om Zanzibar.&lt;/summary&gt;
+  	&lt;p &gt;Textinnehåll.&lt;/p&gt;
+&lt;/details&gt;
+</code> </pre>
+ </section>  
+</article>
+</body>
+</html>

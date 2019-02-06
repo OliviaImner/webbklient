@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title> Olivia Imner 2.6 </title>
+         <link rel="stylesheet" href="style6.css">
+
+</head>
+	<body>
+        <h2>Tabeller</h2>
+        <p>Att skapa tabeller på en webbsida går även att göra med CSS.  
+            I CSS filen är detvanligt att använda sig av egenskapen <code>table-layout</code> och detta visas i exemplet nedanför.</p>
+        <pre><code>
+table {
+table-layout: auto;
+}
+</code></pre>
+        <p><code>Auto</code> värdet är en standard när det kommer till table-layout och innebär att bredden på tabellen styrs av vad tabellen innehåller (Grön tabell). Värdet <code>fixed</code> är en snabbare värde än <code>auto</code>, eftersom den ritar tabellen snabbare in i dokumentet. Med <code>fixed</code> går det även att ändra bredden i cellerna och detta sker såklart med en jämn fördelning av alla cellerna i tabellen (Grå tabell). I den gråa tabellen är <code>width: 60%;</code> och blir breddare jämfört med auto som har ett standard mått. </p>
+
+		<table class="tabellauto">
+            <tr>
+                <th colspan="2">Topp 5 miljövänliga länder 2017</th>
+            </tr>
+            <tr>
+                <th>Topp</th>
+                <th>Länder</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <th>Finland</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Island</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Sverige</th>
+            </tr>
+              <tr>
+                <th>4</th>
+                <th>Danmark</th>
+            </tr>
+              <tr>
+                <th>5</th>
+                <th>Slovenien</th>
+            </tr>
+        </table>
+        <table class="tabellfixed">
+            <tr>
+                <th colspan="2">Topp 5 farligaste länderna 2017</th>
+            </tr>
+              <tr>
+                <th>Topp</th>
+                <th>Länder</th>
+            </tr>
+              <tr>
+                <th>1</th>
+                <th>Syrien</th>
+            </tr>
+              <tr>
+                <th>2</th>
+                <th>Afghanistan </th>
+            </tr>
+              <tr>
+                <th>3</th>
+                <th>Irak</th>
+            </tr>
+              <tr>
+                <th>4</th>
+                <th>Syd Sudan</th>
+            </tr>
+              <tr>
+                <th>5</th>
+                <th>Yemen</th>
+            </tr>
+        </table>
+        <br>
+        <h2>Formulär</h2>
+            <p>Ett formulär används på webbsidor för att kunna fylla i viss information, utseendet på formuläret skapas med hjälp av HTML-taggar och utseendet på formuläret kan göras snyggare med CSS. Alla formulär har samma <code>input</code> tagg, som medför olika värden av utseenden och egenskaper. De egenskaper har syntaxen <code>type</code> och används för att lättare kunna skilja på formulären. Ett exempel är hur lösenord har ett eget egenskapsvärde av <code>input[type="password"]</code>. Nedanför är ett exempel på hur ett inloggningsformulär kan se ut men HTML. </p>
+            
+        <form>
+            Förnamn:<br>
+	        <input type="text" name="fornamn" placeholder="Olivia">	<br/>
+	        Efternamn:<br>
+	        <input type="text" name="efternamn" placeholder="Imner">
+        </form>
+        <p>Med CSS kan formulären få ett mer profetionellt utseende och ge ett bättre intryck för användaren. Exemplet nedanför visar hur CSS har förändrat en del av utseendet på formuläret. </p>
+        <input class="input1" type="text" placeholder="Förnamn">
+        <br>
+        <br>
+        <input class="input1" type="text" placeholder="Efternamn">
+	</body>
+</html>

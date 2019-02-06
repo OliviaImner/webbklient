@@ -1,0 +1,14 @@
+p
+{
+	font-family: sans-serif;
+    font-weight: normal;
+    font-size:100%;
+	color:black;
+}
+#fontSizeEx1 { font-size:xx-small; }
+#fontSizeEx2 { font-size:large; color:#FF69B4; }
+
+ul
+{
+list-style-type: square;
+}

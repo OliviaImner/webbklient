@@ -1,0 +1,26 @@
+body{
+	width:90%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+    background-color:cornsilk;
+} 
+.content1{
+	top: 0;
+	padding: 20px;
+    border-radius: 50px;
+    border-color: lightblue;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: linen;
+	width: 70%;
+	height: 100%;
+
+}
+h1{
+	font-size: 2em;
+	margin: 5px 0;
+	font-weight: bold;
+}

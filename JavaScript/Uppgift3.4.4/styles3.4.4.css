@@ -1,0 +1,56 @@
+body{
+	width:70%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+a {
+    text-decoration-line: none;
+    color: black;
+}
+.tabs {
+  overflow: hidden;
+  border: 1px solid black;
+  background-color: lightslategray;
+}
+
+.tabs a {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tabs a:hover {
+  background-color: #ddd;
+}
+.tabs a.active {
+  background-color: #ccc;
+}
+
+.panel{
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tooltip 
+{
+    border: 3px solid darkred;
+	border-radius : 5px;
+    display: none;
+    width: 20%;
+	padding: 5px;
+	background-color: white;
+
+}
+.trigger
+{
+    color:darkred;
+    font-weight: bold;
+}
+

@@ -1,0 +1,55 @@
+body{
+	width:70%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+
+header {
+	height: 100px;
+	padding: 0 12px;
+    color:cadetblue;
+    position: fixed;
+    top: 0px;
+    margin: auto;
+}
+.content1 {
+	width: 250px;
+	float: left;
+	padding: 5px 15px;
+    position: fixed;
+    left: 40px;
+
+}
+.pagewrap {
+	padding: 5px;
+	width: 960px;
+    height: 1000px;
+	margin: 20px auto;
+}
+
+.content2{
+	width: 130px; /* Account for margins + border values */
+	float: none;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+    position: fixed;
+    right: 500px;
+    
+    
+}
+.content3 {
+	width: 210px;
+	padding: 5px 15px;
+	float: left;
+    position: fixed;
+    right: 70px;
+}
+.img{
+    border-radius: 200px;
+    width: 400px;
+    position: fixed;
+    bottom:10px;
+    right: 400px;
+    
+}

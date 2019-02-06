@@ -1,0 +1,89 @@
+body{
+	width:70%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+
+a{
+    float: left;
+    clear: both;
+}
+div{
+    float: right;
+    clear: left;
+}
+
+#divHide{
+	background-color: lightcoral;
+	height: 100px;
+	width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+	border: 1px solid grey;
+    float: left;
+    clear: both;
+}
+#divShow{
+	display: none;
+	background-color: lightgreen;
+    border-radius: 10px;
+    padding: 5px;
+	border: 1px solid grey;
+    height: 100px;
+	width: 100px;
+    float: left;
+}
+#divToggle{
+	background-color: lightblue;
+	height: 100px;
+	width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+	border: 1px solid grey;
+    float: left;
+    clear: both;
+}
+#divFadeIn{
+	display: none;
+    background-color: lightgoldenrodyellow;
+	height: 100px;
+	width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+	border: 1px solid grey;
+    float: left;
+    clear: both;
+
+}
+#divFadeOut{
+    background-color: lightpink;
+	height: 100px;
+	width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+	border: 1px solid grey;
+    float: left;
+    clear: both;
+}
+#divFadeToggle{
+	background-color: lightseagreen;
+	height: 100px;
+	width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+	border: 1px solid grey;
+    float: left;
+    clear: both;
+
+}
+#divFadeTo{
+	background-color: lightsalmon;
+	height: 100px;
+	width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+	border: 1px solid grey;
+    float: left;
+    clear: both;
+}

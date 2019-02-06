@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset= "UTF-8">
+	<title> Olivia Imner 1.1 </title>
+	</head>	
+
+
+<body>
+			<span style="color:green">Detta dokument kommer innehålla fakta om Zambia</span>.
+			<h1> Introduktion av HTML5 </h1> <br/> 
+			<h2> Vad är HTML5?</h2>
+			En webbsida innehåller hundra till tusen olika element, de viktiga element som behövs för att skapa en
+			webbsida är: <b>HTML</b>-tagg, <b>head</b>, <b>title</b> och <b>body</b>.</br>
+			<b>Html</b> taggen beskriver till webbläsaren att det är ett HTMl dokument och är en behållare för all HTML element, dock inte &lt;!DOCTYPE&gt; tagg.</br>
+			<b>Head</b> taggen är behållaren som inkluderar titlar för dokument, stilar, meta information, skript, länkar, etc.</br>
+			<b>Title</b> taggen bestämmer titlen till webbläsarfliken, och ger en titel för webbsidan när den läggs till i favoriter, samt en titel till namnet på sidan i sökresultatet.</br>
+			<b>Body</b> taggen är kroppen av dokumentet, där all information samlas som till exempel text, bilder, videos, hyperlänkar, listor.</br>
+			Denna uppbyggnadsstruktur består ett webb dokument alltid utav och här är ett exempel,
+<pre><code>
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;"Olivia Imner"&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		Här finns det massor av kul att uppleva
+	&lt;/body&gt;
+&lt;/html&gt;</code>
+</pre>
+			
+			</br>
+			<h2> Vad är meta-tags?</h2>
+				Meta-taggar är till för att samla ihop data (information) till sökmotorer som inte blir seda av webb användaren. 
+				Dessa osynliga enheter ger möjlighet för sökmotorerna att undersöka och därefter presentera den 
+				information till användare som besöker webbsidan. Meta taggar måste bli placerade mellan &lt;head&gt; för att kunna kännas igen av webb crawlers. 
+			<h3> Meta-tagg med namn attribut </h3>
+				 Meta attributet specificerar namnet på metadatan och det finns olika värde på vad metadatan kan innehålla.</br>
+				<b>Author</b> specificerar namnet på av författaren till dokumentet, </br>exempel <code>&lt;meta name= "author" content= "Olivia Imner"&gt;</code></br>
+				</br>
+				<b>Description</b> specificerar en beskrivning av webbsidan. Det är en sammanfattning på författarens webbsida och det är det första användare ser innan de besöker sidan.</br>
+				Det kan vara den enda chansen som finns för att attrahera en läsaren och det är ett bra första intryck som ska ges i sammanfattningen av sidan. </br>
+				Här är ett exempel, <code>&lt;meta name="description" content="Hiita den perfekta platsen att uppleva den tropiska djungeln"&gt;</code></br>
+				</br>
+				<b>Keywords</b> specificerar vilka nyckelord som ska refereras till webbsidan, det är alltså en ordlista av relevanta ord som webbsidan innehåller. Dessa nyckelord kan vara populära sökord för användaren ska kunna söka sig just till din webbsida. Här är ett exempel på hur det kan se ut,</br>
+				<code>&lt;meta name="keywords" content="Upplev, Djungel, Tropiskt"&gt;</code></br>
+				</br>
+				<b>Generator</b> specificerar till vilken mjukvara som används för att generera dokumentet. Det ska inte användas på webbsidor om författaren skrivit sidor vars markering skrevs i en textredigerare.</br>
+				Ett exempel hur koden ser ut, <code>&lt;meta name=generator content="Frontweaver 8.2"&gt;</code></br>
+				</br>
+				<b>Robots</b> specificerar för att förklara för "crawlers" av en sökmotor, att bara indexera den första sidan av webbsidan eller att det tillåts
+				att även hela webbsidan kan indexeras av dem. Här är ett exempel som gör att webbsidan får bli indexerad och normal bli "crawled",</br>
+				<code>&lt;meta name="robots" content="index, follow"&gt;</code>
+			<h3> Meta-taggen med attribut http-equiv</h3>
+				<b>Content type</b> specificerar vilket typ av symboler och teckenkodning som får visas i dokumentet. Exempel på detta är UTF-8 och den taggen ser ut såhär,</br>
+				<code>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</code></br>
+				</br>
+				<b>Default-style</b> specificerar vilken stil av formatark som passar bäst att använda. Exempel,</br>
+				<code>&lt;meta http-equiv="default-style" content="Det här dokumentet föredrar stylesheet"&gt;</code></br>
+				</br>
+				<b>Refresh</b> specificerar i vilken tidsram som dokumentet ska uppdatera sig. Exempel,</br>
+				<code>&lt;meta http-equiv="refresh" content="300"&gt;</code></br>
+				</br>
+			<h2>Hur text presenteras i HTML</h2>
+				I detta avsnitt beskrivs några sätt att presentera text med.</br>
+				<b>Blockquote</b> specificerar när författaren ska citera en speciellt section från en annan webbsida. Exempel,</br>
+				<code>&lt;blockquote cite="https://www.jambotours.se/resa/borneos-natur-och-folk/&gt;</br>
+				Äventyr bland regnskog och berg. Borneo är något utöver det vanliga för varje sann naturälskare. Denna resa går till några av Sarawak och Sabahs mest avlägsna områden.
+				&lt;/blockquote&gt;</code></br>
+				<b>h1 - h6</b> specificerar hur textsnittet visualiseras och dessa kommer i olika format. I exemplet nedanför visas de olika gradera av <b>h1, h2, h3, h4, h5, h6 </b>
+				<h1>Djungelvrålet</h1>
+				<h2>kommer från apor</h2>
+				<h3>i Zambias djungel och</h3>
+				<h4>urbefolkningen tror att detta</h4>
+				<h5>ett rop från deras</h5>
+				<h6>forna gudar</h6>
+				
+				<b>&lt;p&gt;</b> specificeras när text i dokumentet är mer än några rader text. Den här taggen är speciellt formad för att visa stora block av text. Det visas på detta sätt,
+				<p>De lägst liggande delarna av Zambia har tropiskt klimat, men höjden över havet gör att klimatet i det mesta av landet har subtropisk prägel. Medeltemperaturen för juni och juli, som är årets kallaste månader, är cirka 15–18 °C. Den varmaste årstiden är vid början av regnperioden, i regel i oktober, som har en medeltemperatur på 24–27 °C. Det ekvatoriala regnbältet drar in över landet när det södra halvklotet har sommar. </p>
+				<p>Några av Zambias största miljöproblem är luftföroreningar och surt regn på grund av gruvorna, kemikalier som smutsar ner vattnet, jorderosion samt tjuvjakt som allvarligt hotar många djur, bland annat flodhäst, elefant, antilop och de stora kattdjuren. Zambia har skrivit under Kyoto-protokollet om klimatförändringar.</p>
+				<b>&lt;pre&gt;</b> specificeras när text inte ska formateras automatiskt, utan det ska visas precis som i dokumentets kod. Ett exempel på detta visas ovanför när strukturen visas för HTML kod.</br> 
+				<b>span</b> specificeras när en del text ska ha en speciell färg. Exempel på detta ser ut såhär, 
+				<code>&lt;p&gt;Djungeln är &lt;span style="color:green"&gt; grön</span>.&lt;/p&gt;</code>
+				<p>Djungeln är <span style="color:green">grön</span>.</p> 
+			<h2>Hypertext &lt;a href /a&gt;</h2>
+				En hypertext i ett dokument innebär text innehåller länkar till andra texter. 
+				För att kunna använda hyperlänkar i ett dokument, behövs elementen <b>&lt;a&gt;</b> och <b>&lt;/a&gt;</b>. A:et står för anchor(ankare) och innebär att vi kopplar ihop en plats med en annan. 
+				Det måste även anges attributet <b>href</b> (hypertext transfer protocol, http://) för att kunna ange vilket protokoll som används, därefter anges URL-adressen. Det kan se ut såhär, <code>&lt;a href="https://en.wikipedia.org/wiki/Zambia&ly;/a&gt;</code></br>
+				<a href="https://en.wikipedia.org/wiki/Zambia">Zambia</a> </br>
+		
+				<b>Absoluta länkar</b> beskriver var dokumentet är, inklusive protokollet för att få tag i dokumentet, och vilken server de hittas på, och vilken katalog det är, samt namnet på dokumentet. De absoluta hyperlänkarna fungerar på alla webbsidor och är ungefär som en befintlig address.
+				Det som <b>relativa länkar</b> gör är att den utnyttjar att servern vet var dokumentet befinner sig och det betyder att man ofta länkar på sin egna webbsida. Det bra med med relativa hyperlänkar är att om man vill flytta webbsidan behövs det inte skrivas om några länkar.
+				Att <b>länka till ankare</b> är ungefär samma sak at länka till vanliga länkar, eftersom de pekar alltid till sidan som ligger först. Det innebär att ankare pekar till en plats på den befintliga sidan. <b>Bildlänkar</b> är att en bild används istället för en länktext, det kan användas i brödtexten och menyer. Det defineras med &lt;img&gt; tagg och har inte en stängningstagg. Src attributet specificerar URL- addressen till bilden och alt attributet ger en beskrivning till bilden. Ett exempel på kod ser ut såhär,</br>
+				<code>&lt;a href="https://upload.wikimedia.org/wikipedia/commons/2/28/Coat_of_arms_of_Zambia.svg"&gt; &lt;img src="https://en.wikipedia.org/wiki/Wildlife_of_Zambia" alt="Wildlife of Zambia"&gt;</code>
+				<p>
+				Här är en bild som en länk: <a href="https://upload.wikimedia.org/wikipedia/commons/2/28/Coat_of_arms_of_Zambia.svg">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Coat_of_arms_of_Zambia.svg" alt="Coat_of_arms_of_Zambia.svg" width="100" height="100">
+				</a>
+				</p>
+			<h2>Protokoll</h2>
+				Protokoll anger och returnerar data av en del av protokollet av attributvärdet href. Attributvärdet anger vilken destination en specifik länk har i ett område. Detta är en standard för hur data ska transporteras mellan dator. 
+				Det finns olika typer av protokoll och det som de flesta är vana med att se är <b>HTTP(Hypertext transfer protocol)</b>.
+				HTTP är internet protokollet och innebär att att den är specificerad för att användas med World Wide Web. Värden(host) är adressen till www-servern och porten är till vilken portnummer som det ska anslutas till. Oftast behövs det inte skrivas med vilket portnummer, eftersom standarden är 80. Vägen visar vilken fil www-servern vill ha, 
+				samt om detta inte skrivs med så blir det automatiskt att vägen blir till hemmet på sidan. Här är ett exempel,</br>
+				<code>&lt;a href="https://atlas.media.mit.edu/en/profile/country/zmb/"&gt;Atlas hemsida om Zambia</code></br>
+				<a href "https://atlas.media.mit.edu/en/profile/country/zmb/">Atlas hemsdian om Zambia</a></br>
+				
+				<b>FTP (File transfer protocol)</b> innebär att överföra filer genom internet. Många system ger inte tillräckligt med support till HTTP, anledningen till detta är att klienterna inte är lika noga utvecklade som för ETP. När en sida ska kontaktas som stödjer FTP, 
+				behövs det inget användarnamn eller lösenord, samt inga kolon mellan dem eller avslut symbol. Värden (host) är samma som introducerades i HTTP, 
+				alltså webbadressen. Porten och kolon som finns med i slutet av exemplet i paranteserna (cwd1&gt;/&lt;cwd2&gt;/), behöver inte finnas med, eftersom de hänvisar till "change directory" som en klient måste använda för att kunna flytta filen till den önskade katalogen. Sist kommer namnet och innebär namnet på filen. 
+				Exempel,</br>
+				<code>ftp://&lt;user&gt;:&lt;password&gt;@<host>:&lt;port&gt;/&lt; cwd1&gt;/&lt;cwd2&gt;/.../&lt;cwdN&gt;/&lt;name&gt;</code>. 
+				Ett enklare exempel, </br>
+				<code>&lt;a href="ftp://ftp.atlas.media.mit.edu"&gt;FTP Atlas &lt;/a&gt;</code></br>
+				<b>Malito-länk</b> är ett enklare sätt för användaren av webbsidan att kunna skicka mail till en specifik person eller mail alias genom att använda detta attribut som är inkluderat i en hyperlänk. Detta kan se ut på det här sättet,</br>
+				<code>&lt;a href="mailto:olim9472@student.su.se">Maila mig &lt;/a&gt;</code></br>
+				</br>
+				<a href="mailto:olim9472@student.su.se">Maila mig</a>
+			<h2>Listor</h2>
+				Det finns tre typer av listor i HTML och dessa är ordnad, oordnad och beskriven lista. 
+				<b>ul</b> står för oordnad lista och är en behållare av vad listan ska ligga i. <b>li</b> är hur syntaxen är för en beskriven lista med punkter. Exempel på <b> li</b> visas nedanför. </br>
+
+<pre><code> 
+&lt;ul>
+    &lt;li&gt;Zambias mest besökta turistaktivitet är Victoriafallen&lt;/li&gt;
+    &lt;li&gt;Det har svårt att ta sig runt på vägar i Zambia&lt;/li&gt;
+    &lt;li&gt;Zambias huvudstad heter Lusaka&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+				
+				     <ul>
+          					<li>Zambias mest besökta turistaktivitet är Victoriafallen</li>
+          					<li>Det har svårt att ta sig runt på vägar i Zambia</li>
+          					<li>Zambias huvudstad heter Lusaka</li>
+    				 </ul>
+				
+				En ordnad lista har syntaxen <b>ol</b> och kan presenteras i nummer eller bokstäver för att visa ordningen. Här är ett exempel, 
+				<pre><code>
+&lt;ol&gt;
+  &lt;li&gt;Hitta jobb&lt;/li&gt;
+  &lt;li&gt;Leta boende&lt;/li&gt;
+  &lt;li&gt;Försäkringar&lt;/li&gt;
+&lt;/ol&gt;
+				</pre></code>
+				<ol>
+  					<li>Hitta jobb</li>
+ 					<li>Leta boende</li>
+  					<li>Försäkringar</li>
+				</ol>
+				
+				Därefter finns det något som heter beskriven lista och syntaxen <b>dl</b>. Det en beskriven lista har inuti själva behållaren är inte syntaxen il, utan <b>dt</b> som definerar termen med namn och därefter <b>dd</b> en beskrivning av termen. Det kan se ut såhär, 
+<pre><code>
+&lt;dl&gt;
+  &lt;dt&gt;Buffalo&lt;/dt&gt;
+  &lt;dd&gt;- ett av de farligaste djuren på jorden&lt;/dd&gt;
+  &lt;dt&gt;Hjorden &lt;/dt&gt;
+  &lt;dd&gt;- består av mer än 400 starka buffalos &lt;/dd&gt;
+&lt;/dl&gt;
+</pre></code>
+
+				<dl>
+  					<dt>Buffalo</dt>
+ 					 <dd>- ett av de farligaste djuren på jorden</dd>
+ 					<dt>Hjorden</dt>
+  					 <dd>- består av mer än 400 starka buffalos</dd>
+				</dl>
+				
+				<h2>Tabeller</h2>
+					Inom HTML kan det skapas tabeller med rader och kolumner, ungefär som programmet Excel. 
+					En tabell inom HTMl består av tre olika taggar, <b>&lt;table&gt;</b> (tag), <b>&lt;tr&gt;</b> (tabellrad) och
+					<b>&lt;td&gt;</b> (tabell kolumn). Det kan även läggas till rubriker i cellerna, det görs genom att lägga till syntaxen <b>&lt;th&gt;</b> och <b>&lt;caption&gt;</b> syntaxen innebär att en titel skapas för varje tabell.</br>
+					För att visa ett bra exempel, inkluderades även en border, för att få tydliga linjer av tabeller. </br>
+					</br>
+				
+<table border="1">
+ <tr>
+ <caption>Månads sparningar</caption>
+   <th>Månad</th>
+   <th>Att spara</th>
+ </tr>
+ <tr>
+   <td>Juni</td>
+   <td>3000 kr</td>
+ </tr>
+</table>
+<pre><code>	
+&lt;table border="1"&gt;
+ &lt;caption>Månads sparningar&lt;/caption&gt;
+ &lt;tr&gt;
+   &lt;th&gt;Månad&lt;/th&gt;
+   &lt;th&gt;Att spara&lt;/th>
+ &lt;/tr&gt;
+ &lt;tr&gt;
+   &lt;td&gt;Juni&lt;/td&gt;
+   &lt;td&gt;3000 kr&lt;/td&gt;
+ &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+				<h2>Bilder</h2>
+					För att infoga en bild i ett HTML dokument behövs attributet <b>IMG</b>, det står för Image. 
+					Det ska även inkluderas en URL länk eftersom man vill veta var bilden ligger i servern, så att den kan hittas.
+					<b>IMG</b> behöver inget avslut med en stängningstagg, utan det enda som behövs är /&gt; i slutet av raden. 
+					En absolut URL pekar till en webbsida och den specificeras genom källattributet src och attributet alt är en beskrivning till bilden (exempel 1). 
+					
+					En relativ URL pekar till en fil som hör till den relativa sidan, alltså kan det vara att bilden ligger i en fil där även webbsidan är lokaliserad och sparad, (Exempel 2). 
+					Attributet <b>align</b> innebär att bilden stationeras på en speciell plats i dokument, HTML5 stödjas inte dessa attribut utan det skrivs i CSS.
+					Det som är bra att använda med IMG, är att det kan sättas i vilken storlek som är bäst för en bra layout i hela dokumentet. 
+					Syntaxen av <b>width</b> står för bredden på bilen och <b>height</b> står för höjden.</br>
+					
+					Exempel 1</br>
+					<code>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg" alt="Flag_of_Zambia.svg" width="200" height="150"/&gt; </code></br>
+
+					<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg" alt="Flag_of_Zambia.svg" width="200" height="150"/> </br>
+					Exempel 2</br>
+					<code>&lt;img src="Hippo_pod_edit.jpg" alt="Hippo_pod_edit.jpg" width="200" height="200"/&gt;</code></br>
+					<a>
+				    <img src="Hippo_pod_edit.jpg" alt="Hippo_pod_edit.jpg" width="200" height="200"/>
+				    </a>
+				<h2>Bildkartor</h2>
+					För att skapa bildkartor behövs syntaxen <b>&lt;map&gt;</b> och <b>&lt;area&gt;</b> taggar, dessa används för att gör en bild som ska vara tryck vänlig eftersom det ska finnas områden där man länkas vidare till en annan bild.
+					Map används på klient webbsidan för att definera en bildkarta och img-taggen behöver också läggas till för att bilkartan ska fungera. Area-taggen är inuti map-taggen och används för att stationera ut platser på bilden, genom att använda vilken form området ska och vilka koordinater det tryck vänliga området ska ligga på.
+					Därefter specificeras var den nya bildfilen ligger och vad den bilden heter.  
+					Här är ett exempel på hur det kan se ut,</br>
+					<img src="Hippo_pod_edit.jpg" width="200" height="200" alt="Hippo_pod_edit.jpg" usemap="#hippoMap">
+
+						<map name="hippoMap">
+  							<area shape="rect" coords="200,200,120,100" href="Hippo_memphis.jpg" alt="memphis">
+  							<area shape="rect" coords="0,30,70,98" href="Hippopotamus.jpg" alt="potamus">
+
+						</map></br>
+				   Syntax för exemplet, </br>
+			<pre><code>
+&lt;img src="Hippo_pod_edit.jpg" width="200" height="200" alt="Hippo_pod_edit.jpg" usemap="#hippoMap"&gt;
+
+	&lt;map name="hippoMap"&gt;
+  		&lt;area shape="rect" coords="200,200,120,100" href="Hippo_memphis.jpg" alt="memphis"&gt;
+  		&lt;area shape="rect" coords="0,30,70,98" href="Hippopotamus.jpg" alt="potamus"&gt;
+
+	&lt;/map&gt;
+			</code></pre>	  
+		</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

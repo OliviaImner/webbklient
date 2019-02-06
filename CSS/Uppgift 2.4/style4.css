@@ -1,0 +1,25 @@
+body{
+    background-image: url(bild1.jpg);
+	width:60%;
+	margin-left: 20%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+h1{
+    background-image: url(bild4.jpg);    
+}
+
+.listpics {
+	list-style-position: inside;
+	width:200px;
+	padding: 0em;
+}
+.list {
+	background-image: url('star1.png');
+}
+.img {
+    background: url(bild5.jpg);
+    float: right;
+    margin: 15px;
+    padding: 10em;
+}

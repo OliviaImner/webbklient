@@ -1,0 +1,115 @@
+body{
+background:white;
+	width:60%;
+	margin-left: 20%;
+	box-shadow: 14px 10px 0px #fcd8b9;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+p {border-bottom-color:blue;  
+}
+.box{
+outline-color: invert;
+outline-style: solid;
+outline-width: 5px;
+padding: 1em;
+float:left;
+}
+.dotted {border-style: dotted;
+	padding:10px;
+	margin:3px;
+	text-align:center;
+    width: 300px;}
+.dashed {border-style: dashed;
+    padding:10px;
+	margin:3px;
+	text-align:center;
+    width: 300px;}
+.solid {border-style: solid;
+    padding:10px;
+	margin:3px;
+	text-align:center;
+    width: 300px;}
+.double {border-style: double;
+    padding:10px;
+	margin:3px;
+	text-align:center;
+    width: 300px;}
+.groove {border-style: groove;
+    padding:10px;
+	margin:3px;
+	text-align:center;
+    width: 300px;}
+.ridge {border-style: ridge;
+    border-width:4px;
+    padding:10px;
+	margin:3px;
+	text-align:center;
+    width: 300px;}
+.inset {border-style: inset;
+    padding:10px;
+	margin:3px;
+	text-align:center;
+    width: 300px;}
+.outset {border-style: outset;
+	border-width:4px;
+	padding:10px;
+	margin:3px;
+	text-align:center;
+    width: 300px;
+}
+
+.info1 {
+    background-color: rgba(30, 153, 153, .5);
+    float:left;
+	padding:1em;
+}
+.info2 {
+    background-color: rgba(30, 153, 153, .2);
+    float:left;
+	padding:1em;
+}
+.info3 {
+    background-color: #267272;
+    opacity: .3;
+    float:left;
+	padding:1em;
+}
+.info4 {
+	background-color: #267272;
+	border-radius: 10px;
+	float:right;
+	padding:2em;
+}
+.info5{
+    background-color: #267272;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 20px; 
+    float:right;
+	padding:2em;
+}
+
+.info7 {
+    background: url('forest1.png'), url('forest2.png');
+    background-blend-mode: screen;
+    float:right;
+	padding:10em;
+}
+.info8 {
+    background-color: #267272;
+    box-shadow: 5px 7px 10px #999999;
+    float:right;
+	padding:2em
+}
+.info9 {
+    background-image: linear-gradient(to left, #267272, #FFFFFF);
+    float: right;
+    padding: 2em;
+}
+.info10 {
+    background-image: radial-gradient(#267272, #FFFFFF);
+    float: right;
+    padding: 2em;
+}

@@ -1,0 +1,71 @@
+body{
+	width:60%;
+	margin-left: 20%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+} 
+    
+a#link1:link
+{
+	color: hotpink;
+}
+a#link1:hover{
+	background-color: pink;
+}
+
+a#link1:visited{
+	color: #EA32DB;
+}
+
+a#link1:active{
+	color: #8378F6;
+	background-color: #FFFFFF;
+}
+
+a#knapp {
+	background-image:radial-gradient(hotpink, pink);
+    border-radius: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 0px grey;
+}
+a#knapp:hover{
+    background-image: radial-gradient(#16828C, black);
+	border:1px solid black;
+
+}
+a#knapp:active{
+    color: white;
+}
+
+a#imglink{
+    background: url('arrowg.png');
+    background-position: left center;
+    border:100px;
+    text-decoration: none;
+    width:183px;
+	height:183px;
+	padding-top:33px;
+	padding-bottom:35px;
+	padding-right:85px;
+	padding-left:30px;
+    margin-top:50px;
+	margin-bottom:20px;
+	margin-right:20px;
+	margin-left:20px;
+	text-align:center;	
+	color:#0066ff;
+
+}
+a#imglink:hover{
+    background: url('arrowg.png') no-repeat;
+    color: black;
+}
+a#imglink:visited{
+    color: purple;
+}

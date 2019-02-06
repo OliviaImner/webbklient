@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title> Olivia Imner 2.4 </title>
+            <link rel="stylesheet" href="style4.css">
+
+</head>
+	<body>
+        <article>
+            <h1>Bilder och bakgrunder</h1>
+		      <p>I CSS är det vanligt att när bilder stylas så är det enklast att skapa en speciell klass eller id med <code>&lt;div&gt;</code>, därefter stylar man alla bilder som ligger i den taggen. Utan CSS är det förekommade att bilder på webbsidan stylas med <code>img</code> taggen. 
+              </p>
+            <h3>Bakgrunder</h3>
+            <p>Bakgrunder i CSS skapas med hjälp av egenskapen <code>background</code> och det kan enkelt bestämmas vilken bakgrund ett speciellt element ska ha eller om hela webbsidan ska ha en viss bakgrund. Med <code>background-image</code> kan det ställas in vilken bakgrundsbild webbsidan ska ha och med <code>background-color</code> kan en färg bestämmas.
+            Exempel visas nedanför: </p>
+<pre><code>
+body {
+    background-image: url(’bild1.jpg’);
+} 
+
+h1 { 
+background-image: url(’bild2.jpg’);
+}</code></pre>
+            <p>Listor med punkter kan också ha bakgrunder och syntaxen för det ser ut såhär:</p>
+<pre><code>
+.list {
+	background-image: url('star.png');
+}
+</code></pre> 
+            <ul class="listpics">
+                <li class="list">Bakgrunder</li>
+                <li>Bilder</li>
+                <li>Foton</li>
+            </ul>  
+            <p class="img"></p>
+
+            <h2>Bilder</h2>
+                <p>Med img-taggen kan det infogas bilder på webbsidan och genom att img-taggen blir tilldelas olika egenskaper, kan den kontrollera hur bilden presenteras i dokumentet. 
+                Genom att lägga till kantlinjer med border, marginaler som padding ocg margin, hörn som är rundade med border-radius, samt var bilden ska placeras med egenskapen float. Float addresseras med var bilden ska placeras med "right" eller "left", i exemplet visas det hur klassen img, har innehållet float med en riktning till höger och margin med 5 pixlar som innebär att det överiga innehållet ska hålla ett avstånd med 5 pixlar. </p>
+            
+                    
+     <pre><code>
+ .img { 
+float: right;
+margin: 5px;
+}
+     </code></pre>         
+            <h2>Text i närheten av bilder</h2>
+                <p>När float används kommer texten runt omkring bilden och placeras på andra sidan av elementet. Alltså om float ställs in att vara till höger, placeras text ut till vänster. Om detta inte ska hända, så kan <code>clear</code> hjälpa till att hantera texten tillbaka till att den är under bilden igen. </p>
+<pre><cod>
+p {
+clear:left;
+}
+</cod></pre>
+            <p><code>Clear</code> kan även användas till att styra att vissa taggar som inte ska få flöda som text. Exempel visas nedanför: </p>
+<pre><code>
+h1 {
+clear:left;
+}
+</code></pre>
+        </article>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset= "UTF-8">
+	<title> Olivia Imner 1.3 </title>
+</head>
+<body>
+<span style="color:green">Detta dokument kommer innehålla fakta om Gambia</span>.
+		<article>
+			<header> 
+			<h1>Uppgift 1.3 Semantiska element för text</h1>
+			</header>
+				<section>
+					<h2>Vad handlar elementen <code>mark, time, datetime &amp; wbr</code> om i HTML5?</h2>
+			     		HTML5 elementet <code><b>&lt;mark&gt;</b></code> företräder en markerad text och det kan till exempel användas på en sida när ett sökresultat visar det sökta ordet med en markering. 
+						Såhär kan det se ut med en markering:
+						<p>Gambia ingick i <mark>Maliriket</mark> på 1200-talet. </p>
+						<code><b>&lt;time&gt;</b></code> definierar tid och datum som är läsbar för en människa.
+						Elementet kan också användas för att koda tid och datum på ett maskinläsbart genomförande så att agentanvändaren kan förslå schemalagda händelser i användarens kalender och 
+						att sökmotorer även kan räkna ut och skapa smartare sökresultat. I <code><b>&lt;time&gt;</b></code> ska <code><b>&lt;datetime&gt;</b></code> attributet anvisar elementets tid och datum.
+						Det behöver även vara ett korrekt datum och en valfri tidsträng för att ett värde ska analyseras, annars är inte elementet en del av en tidstämpel. 
+						<p>Det här dokumentet skapades den 
+						<time datetime="2017-11-23T14:00">November 23</time>.
+						</p>
+  						Syntax för ovanstående exempel:
+<pre> <code>
+&lt;p&gt;Det här dokumentet skapades den 
+&lt;time datetime="2017-11-23T14:00"&gt;November 23&lt;/time&gt;.
+&lt;/p&gt;
+  						
+</code></pre>
+						<code><b>&lt;wbr&gt;</b></code> betyder på engelska Word Break Opportunity och anger var ett alternativt radbrytning skulle vara bra att ha i texten. 
+						Detta element används när det är osäkert om webbläsaren kommer bryta en del av raderna på fel plats i dokumentet eller om ett ord är för långt och därmed bryts omedvetet. 
+						Eftersom att det blir svårt att läsa långa ord kan <code><b>&lt;wbr&gt;</b></code> göra det möjligt att bryta om formatet på webb fönstret ändras. I exemplet finns <code><b>&lt;wbr&gt;</b></code> med mellan det sammansatta ordet. 
+						
+						<p>
+						Gambia ingick i Maliriket på 1200-talet. Då detta sönderföll uppstod flera kungadömen i <wbr>Gambia<wbr>Gambia<wbr>Gambia<wbr>Gambia<wbr>Gambia<wbr>Gambia<wbr>Gambia<wbr>. De viktigaste var Barra, Kombo och Fulladu. 
+						På 1400-talet kom portugiserna till Gambiaflodens mynning, och på 1500-talet britter och fransoser.
+						De upprättade handelsstationer och bedrev handel upp längs floden. 
+						</p>  
+						
+						Här är syntaxen för exemplet:<br>
+						<code>
+						&lt;p&gt;
+						Gambia ingick i Maliriket på 1200-talet. Då detta sönderföll uppstod flera kungadömen i &lt;wbr&gt;Gambia&lt;wbr&gt;Gambia&lt;wbr&gt;Gambia&lt;wbr&gt;Gambia&lt;wbr>Gambia&lt;wbr&gt;Gambia&lt;wbr&gt;Gambia&lt;wbr&gt;. De viktigaste var Barra, Kombo och Fulladu. 
+						På 1400-talet kom portugiserna till Gambiaflodens mynning, och på 1500-talet britter och fransoser.
+						De upprättade handelsstationer och bedrev handel upp längs floden. 
+						&lt;/p&gt; 
+						</code>
+				</section>
+				
+		</article>
+	</body>
+</html>

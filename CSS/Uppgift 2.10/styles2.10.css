@@ -1,0 +1,45 @@
+.form-submit button{
+    background: lightgreen;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    margin-left: 35px;
+    line-height: 34px;
+    font-size: 18px;
+    color: #000;
+    font-family: 'patua_oneregular', arial, sans-serif;
+    text-align: center;
+    border: 2px solid black;
+    padding-left: 25px;
+    padding-right: 36px;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+
+.form-submit button:hover {
+    background: darkgreen;
+    border-color: white;
+    color: white; 
+}
+
+h2{
+    
+    font-family: 'patua_oneregular', arial, sans-serif;
+    color: lightcoral;
+
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+h2:hover{
+    border-color: olivedrab;
+    color: olivedrab; 
+}
+h1, p{
+    font-family: 'patua_oneregular', arial, sans-serif;
+}
+

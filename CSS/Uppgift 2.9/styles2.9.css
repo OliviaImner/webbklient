@@ -1,0 +1,11 @@
+@font-face {
+    font-family: alex-brush;
+    src: url('./fonts/alex-brush/AlexBrush-Regular.ttf')
+    
+}
+
+*{
+   font-family: alex-brush;
+}
+
+
