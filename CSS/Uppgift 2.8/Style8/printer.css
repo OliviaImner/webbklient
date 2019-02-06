@@ -6,14 +6,18 @@ body{
     background-color: bisque;
 } 
 
-h1{
-	font-size: 2em;
-	margin: 5px 0;
-	font-weight: bold;
-}
-@page {
-size: portrait;
-}
 @media print {
-    
+   	body {
+	page-break-inside: avoid;
+	widows: 3;
+	orphans: 3;
+	}
+	
+	footer {
+		page-break-after: always;
+	}
+	
+	h2 {
+		page-break-before: always;
+	}
 }

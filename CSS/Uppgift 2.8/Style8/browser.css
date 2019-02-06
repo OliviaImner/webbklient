@@ -1,0 +1,31 @@
+body{
+	width:90%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 150%;
+    background-color:cornsilk;
+} 
+
+h1{
+	font-size: 30px;
+	margin: auto;
+	font-weight: bold;
+}
+
+article {
+	
+	padding: 20px;
+	margin: 10px auto;
+	
+    -webkit-column-count: 3;
+    -moz-column-count: 4;
+    -ms-column-count: 2;
+	
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 50px;
+    -ms-column-gap: 20px;
+
+    -webkit-column-rule: 2px outset yellow;
+    -moz-column-rule: 5px dotted aqua;
+    -ms-column-rule: 8px double darkblue;
+} 

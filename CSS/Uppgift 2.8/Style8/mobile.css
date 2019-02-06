@@ -5,4 +5,29 @@ body{
 	line-height: 150%;
     background-color: lightblue;
 } 
- @media = screen ()
+
+@media (max-device-width: 480px) {
+	
+	h1, h2, p {
+		font-style: oblique;
+		color: royalblue;
+	}
+}
+@media (min-device-width: 481px) {
+	
+	h1 {
+		font-size: 40px;
+		font-style: normal;
+		font-family: sans-serif;
+	}
+}
+@media (orientation: landscape) {
+	body {
+		background-color: lightseagreen;
+	}
+}
+@media (orientation: portrait) {
+	body{
+		background-color: skyblue;
+	}
+}

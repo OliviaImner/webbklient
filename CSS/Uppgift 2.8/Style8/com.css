@@ -1,0 +1,19 @@
+article {
+	padding: 20px;
+	margin: 10px auto;
+	
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+	
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+
+    -webkit-column-rule: 2px outset darkgreen;
+    -moz-column-rule: 2px outset darkgreen;
+    column-rule: 2px outset darkgreen;
+}
+a{
+    clear: both;
+}

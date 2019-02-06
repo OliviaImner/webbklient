@@ -1,0 +1,11 @@
+body{
+	width:90%;
+	margin-left: 10%;
+	font-family: 'Raleway', sans-serif;
+	line-height: 170%;
+    background-color: lightblue;
+} 
+
+@import url(mobile.css) (max-device-width: 480px);
+@import url(com.css) (min-device-width: 481px);
+@import url(printer.css);
