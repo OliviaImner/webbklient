@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	var imageSrcArray = ['dog1.jpg', 'dog2.jpg', 'dog3.jpg','dog4.jpg', 'dog5.jpg'];
+	var imageSrcArray = ['https://www.dropbox.com/s/6byiflwstexke7t/dog1.jpg?raw=1', 'https://www.dropbox.com/s/cmnlej0jcz8to1w/dog2.jpg?raw=1', 'https://www.dropbox.com/s/my9fmgqfonjeslo/dog3.jpg?raw=1','https://www.dropbox.com/s/pj2evuerf5hqk3k/dog4.jpg?raw=1', 'https://www.dropbox.com/s/g5szn50usg0bdx6/dog5.jpg?raw=1'];
 	var i = 0;
 
 	var imageArray = []
@@ -82,7 +82,7 @@ $('#imageViewer').click(function() {
     	// Bilden ritas ut i vänstra hörnet
 	ctx.beginPath();
 	var img1 = new Image();
-	img1.src = "dog.jpg";
+	img1.src = "https://www.dropbox.com/s/qpwzejx5xghalsu/dog.jpg?raw=1";
 	img1.onload = function() {
     ctx.drawImage(img1, 1, 500);
 	};
@@ -120,7 +120,7 @@ $('#imageViewer').click(function() {
 	ctx.rect(500, 500, 170, 170);
 	ctx.closePath();
 	var img2 = new Image();
-	img2.src = "pattern.jpg";
+	img2.src = "https://www.dropbox.com/s/evuxzfa8m89zpuz/pattern.jpg?raw=1";
 	var pattern = ctx.createPattern(img2, "repeat");
 	ctx.fillStyle = pattern;
 

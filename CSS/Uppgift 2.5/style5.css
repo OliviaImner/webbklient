@@ -44,7 +44,7 @@ a#knapp:active{
 }
 
 a#imglink{
-    background: url('arrowg.png');
+    background: url("https://www.dropbox.com/s/9fybr0pdk98b6sh/arrowg.png?raw=1");
     background-position: left center;
     border:100px;
     text-decoration: none;
@@ -63,7 +63,7 @@ a#imglink{
 
 }
 a#imglink:hover{
-    background: url('arrowg.png') no-repeat;
+    background: url("https://www.dropbox.com/s/x52duhgy75kq7f0/arrow2.png?raw=1") no-repeat;
     color: black;
 }
 a#imglink:visited{

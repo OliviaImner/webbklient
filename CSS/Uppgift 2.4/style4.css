@@ -1,12 +1,12 @@
 body{
-    background-image: url(bild1.jpg);
+    background-image: url("https://www.dropbox.com/s/4qeiv1jgmwbhqhr/bild1.jpg?raw=1");
 	width:60%;
 	margin-left: 20%;
 	font-family: 'Raleway', sans-serif;
 	line-height: 150%;
 } 
 h1{
-    background-image: url(bild4.jpg);    
+    background-image: url("https://www.dropbox.com/s/w1wzoc3a2epk4vy/bild4.jpg?raw=1");    
 }
 
 .listpics {
@@ -15,10 +15,10 @@ h1{
 	padding: 0em;
 }
 .list {
-	background-image: url('star1.png');
+	background-image: url("https://www.dropbox.com/s/zybkvn53tamw4w4/star1.png?raw=1");
 }
 .img {
-    background: url(bild5.jpg);
+    background: url("https://www.dropbox.com/s/pwujhvywugfl7mb/dog.jpg?raw=1");
     float: right;
     margin: 15px;
     padding: 10em;

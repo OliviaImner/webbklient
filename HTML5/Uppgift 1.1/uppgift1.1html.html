@@ -133,7 +133,7 @@
                 <br>
 				<code>&lt;a href="https://atlas.media.mit.edu/en/profile/country/zmb/"&gt;Atlas hemsida om Zambia</code>
                 <br>
-				<a href "https//atlas.media.mit.edu/en/profile/country/zmb/">Atlas hemsdian om Zambia</a>
+				<a href="https//atlas.media.mit.edu/en/profile/country/zmb/">Atlas hemsdian om Zambia</a>
                 <br>
 				
 				<b>FTP (File transfer protocol)</b> innebär att överföra filer genom internet. Många system ger inte tillräckligt med support till HTTP, anledningen till detta är att klienterna inte är lika noga utvecklade som för ETP. När en sida ska kontaktas som stödjer FTP, 
@@ -141,8 +141,9 @@
 				alltså webbadressen. Porten och kolon som finns med i slutet av exemplet i paranteserna (cwd1&gt;/&lt;cwd2&gt;/), behöver inte finnas med, eftersom de hänvisar till "change directory" som en klient måste använda för att kunna flytta filen till den önskade katalogen. Sist kommer namnet och innebär namnet på filen. 
 				Exempel,
                 <br>
-				<code>ftp://&lt;user&gt;:&lt;password&gt;@<host>:&lt;port&gt;/&lt; cwd1&gt;/&lt;cwd2&gt;/.../&lt;cwdN&gt;/&lt;name&gt;<
-                /code>. 
+				<code>ftp://&lt;user&gt;:&lt;password&gt;@<host>:&lt;port&gt;/&lt; cwd1&gt;/&lt;cwd2&gt;/.../&lt;cwdN&gt;/&lt;name&gt;
+                </code> 
+                    
 				Ett enklare exempel, <br>
 				<code>&lt;a href="ftp://ftp.atlas.media.mit.edu"&gt;FTP Atlas &lt;/a&gt;</code> 
                 <br>
@@ -241,34 +242,25 @@
 					<b>IMG</b> behöver inget avslut med en stängningstagg, utan det enda som behövs är /&gt; i slutet av raden. 
 					En absolut URL pekar till en webbsida och den specificeras genom källattributet src och attributet alt är en beskrivning till bilden (exempel 1). 
 					
-					En relativ URL pekar till en fil som hör till den relativa sidan, alltså kan det vara att bilden ligger i en fil där även webbsidan är lokaliserad och sparad, (Exempel 2). 
-					Attributet <b>align</b> innebär att bilden stationeras på en speciell plats i dokument, HTML5 stödjas inte dessa attribut utan det skrivs i CSS.
-					Det som är bra att använda med IMG, är att det kan sättas i vilken storlek som är bäst för en bra layout i hela dokumentet. 
-					Syntaxen av <b>width</b> står för bredden på bilen och <b>height</b> står för höjden.
-                    <br>
-					
 					Exempel 1<br>
 					<code>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg" alt="Flag_of_Zambia.svg" width="200" height="150"/&gt; </code>
                     <br>
 
-					<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg" alt="Flag_of_Zambia.svg" width="200" height="150"/> <b>
-					Exempel 2
-                    <br>
-					<code>&lt;img src="Hippo_pod_edit.jpg" alt="Hippo_pod_edit.jpg" width="200" height="200"/&gt;</code><
-					
-                    <a> <img src="Hippo_pod_edit.jpg" alt="Hippo_pod_edit.jpg" width="200" height="200">
-                    </a>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/Flag_of_Zambia.svg" alt="Flag_of_Zambia.svg" width="200" height="150"/> <br>
+    
+           
+                    
 				    
 				<h2>Bildkartor</h2>
-					För att skapa bildkartor behövs syntaxen <b>&lt;map&gt;</b> och <b>&lt;area&gt;</b> taggar, dessa används för att gör en bild som ska vara tryck vänlig eftersom det ska finnas områden där man länkas vidare till en annan bild.
+					För att skapa bildkartor behövs syntaxen <b>&lt;map&gt;</b> och <b>&lt;area&gt;</b> taggar, dessa används för att gör en bild som ska vara tryckvänlig eftersom det ska finnas områden där man länkas vidare till en annan bild.
 					Map används på klient webbsidan för att definera en bildkarta och img-taggen behöver också läggas till för att bilkartan ska fungera. Area-taggen är inuti map-taggen och används för att stationera ut platser på bilden, genom att använda vilken form området ska och vilka koordinater det tryck vänliga området ska ligga på.
 					Därefter specificeras var den nya bildfilen ligger och vad den bilden heter.  
 					Här är ett exempel på hur det kan se ut,
-					<img src="Hippo_pod_edit.jpg" width="200" height="200" alt="Hippo_pod_edit.jpg" usemap="#hippoMap">
+					<img src="https://www.dropbox.com/s/golef5cqqqalsck/Hippo_pod_edit.jpg?raw=1" width="200" height="200" alt="Hippo_pod_edit.jpg" usemap="#hippoMap">
 
 						<map name="hippoMap">
-  							<area shape="rect" coords="200,200,120,100" href="Hippo_memphis.jpg" alt="memphis">
-  							<area shape="rect" coords="0,30,70,98" href="Hippopotamus.jpg" alt="potamus">
+  							<area shape="rect" coords="200,200,120,100" href="https://www.dropbox.com/s/7kpjlkhrrrnot47/Hippo_memphis.jpg?raw=1" alt="memphis">
+  							<area shape="rect" coords="0,30,70,98" href="https://www.dropbox.com/s/1829bag2oanwum6/Hippopotamus.jpg?raw=1" alt="potamus">
 
 						</map>
 				   Syntax för exemplet, 

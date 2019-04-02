@@ -11,7 +11,7 @@ $(document).ready(function(){
 	});
    //Bilden på valparna ändrar till en fullvuxen hund
     $("img").delay(1000).fadeOut(500, function() { 
-        $(this).attr("src", "grown.jpg").fadeIn(500);
+        $(this).attr("src", "https://www.dropbox.com/s/az17790vjewy5mi/grown.jpg?raw=1").fadeIn(500);
         
         });
     //vid klick byter klassen toning till andra sidan av div
