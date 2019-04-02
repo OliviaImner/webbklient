@@ -1,0 +1,366 @@
+/* CSS-fil som fungerar med alla html dokumenten. */
+html,body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    height: 100%;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    letter-spacing: 3px;
+}
+ul{
+    list-style-type: none;
+}
+p{
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    color: #225b3a;
+    padding: 47px;
+}
+/*Rubriker*/
+h1{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #225b3a;
+    text-align: center; 
+}
+h2{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #225b3a;
+    text-align: center; 
+    padding: 50px;
+}
+h3{
+    font: 20px "Lato", sans-serif;
+    width: 200px;
+    color: black;
+    left: 40px;
+    position: relative;
+    letter-spacing: 5px;
+}
+form{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+/*huvuddel*/
+.header {
+    width: 100%;
+    background-image: url(https://www.dropbox.com/s/ojpdx1uxsefh3up/fog1280.jpg?raw=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+    height: 100%;
+}
+/*används för index.html för att sätta höjden på bilden*/
+#head_id{ 
+    height: 800px;
+}
+
+/*menu*/
+.nav .menu-bar{
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 2px 4px grey;
+    background: none;
+}
+/*menulistan*/
+.menu-bar li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 30px;
+    margin: 0px 20px;
+    font-size: 25px;
+    cursor: pointer;
+    font-weight: bold; 
+    font-family: sans-serif;
+}
+.menu-bar a{
+    text-decoration-line: none;
+    color: #225b3a; 
+}
+/*feedback med färg över menulistan*/
+.menu-bar a:hover{
+    color: #328c58;
+}
+/*parallax*/
+.paradox-img1, .paradox-img2 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*klassen med en paragraf i. */
+.info-site{
+    color: #777;
+    background-color:white;
+    text-align:center;
+    padding:50px 80px;
+    text-align: center;
+}
+/*bilden för parallaxen*/
+.paradox-img2 {
+    background-image: url("https://www.dropbox.com/s/lwg0q44fddxipr5/markus-spiske.jpg?raw=1");
+    min-height: 400px;
+}
+
+/*border med mitt namn*/
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+
+}
+/*footer*/
+#footer-main{
+    width: 100%;
+    float: left;
+    background-image: url("https://www.dropbox.com/s/igfpjal830rh4ys/footer1.png?raw=1");
+}
+.footer-wrapper {
+    width: 100%;
+    float: left;
+    padding: 70px 0 30px 0;
+}
+.footer-nav{ 
+    width: 200px;
+    text-decoration: none; 
+    letter-spacing: 5px; 
+    float: left;
+    margin-left: 150px;
+    
+}
+.footer-nav li a{ 
+    width: 200px;
+    float: left;
+    text-decoration: none; 
+    letter-spacing: 5px; 
+    color: black;
+}
+.footer-sm{
+    margin-left: 800px;
+    position: relative;
+}
+/*nyhetbrevet*/
+.footer-newsletter{
+    width: 400px;
+    float: left;   
+}
+.subscribe-form p{
+    float: left;
+    letter-spacing: 5px;
+    color: black;
+    line-height: 25px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+.form-group {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    color: black;
+    letter-spacing: 5px;
+    font-size: 12px;
+    text-align: left; 
+}
+/*css för meddleandet som visar när klickande i textfältet*/
+.form_newsletter .form-group .grey, .form-group .grey {
+    background: none repeat scroll 0 0 #777;
+    border-radius: 5px 0px 3px 3px;
+    color: #FFF;
+    text-shadow: 0 1px 1px #333;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 15px 8px 15px;
+    top: 30px;
+    right: -18px;
+    width: 75%;
+    margin-left: 100px;
+}
+/*input och textfält i nyhetsformuläret och grön transition vid besök av olika webbsidor*/
+.form-group input, .form-group textarea {
+    width: 75%;
+    margin-left: 100px;
+    right: 10px;
+    background: white;
+    border-radius: 3px;
+    font-size: 12px;
+    color: #989898;
+    line-height: 16px;
+    padding: 8px 10px 10px;
+    border: 1px solid #2d2d2d;
+    transition: 1s ease-in;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+    -webkit-appearance: none;
+}
+/*feedback när man klickar på textfält*/
+.form-group input:focus, .form-group textarea:focus, .form-group input:active, .form-group textarea:active {
+    border: 4px solid #22bd56;
+    border-radius: 5px;
+    
+}
+/*premunera*/
+.form-submit {
+    width: auto;
+    float: left;
+    margin-top: 6px;
+}
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    width: 200px;
+    cursor: pointer;
+    margin-left: 35px;
+}
+/*premunera knappen*/
+.form-submit button{
+    width: 90%;
+    background: lightgrey;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    margin-left: 100px;
+    line-height: 34px;
+    font-size: 18px;
+    color: #000;
+    font-family: 'patua_oneregular', arial, sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    padding-left: 25px;
+    padding-right: 36px;
+    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease-in;
+    -moz-transition: 0.5s ease-in;
+    -ms-transition: 0.5s ease-in;
+    -o-transition: 0.5s ease-in;
+  
+}
+/* feedback när man har musen över premunera knappen*/
+.form-submit button:hover, .form-submit button:focus, .form-submit button:active {
+    background: #107876;
+    border-color: white;
+    color: white; 
+
+}
+/*bild */
+.pic-nr{
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 30px;
+	padding: 10px 10px;
+	position: absolute;
+}
+img {
+    border: solid 5px black;
+    width: 100%;
+}
+
+.photo {
+	display: block;
+	overflow: hidden;
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+/* placerar nästa knappen */
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* feedback när man har musen över */
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Animation som gör att bilderna tonas bort vid byte av bild. Är anpassad till andra webbläsare. */
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.0s;
+	animation-name: fade;
+	animation-duration: 1.0s;
+}
+@-webkit-keyframes fade {
+	from {
+		opacity: .5
+	}
+	
+	to {
+		opacity: 1
+	}
+}
+@keyframes fade {
+	from {
+		opacity: .5
+	}
+	
+	to {
+		opacity: 1
+	}
+}
+/*mitt foto på "om mig" sidan*/
+#my_photo {
+    width: 50%;
+    height: 65%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+/*bildspelets storlek och position*/
+.container{
+    max-width: 500px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*kontaktformulär*/
+#contact{
+	text-align: center;
+	font-family: 'patua_oneregular', arial, sans-serif;
+	font-size: 12px;    
+    padding: 8px 10px 10px;
+    border: 1px solid #2d2d2d;
+    border-radius: 3px;
+}
+/*utseende på skickaknappen på kontaktsidan*/
+#submitC{
+    width: 100px;
+    background-color: #225b3a;
+    border-color: #225b3a;
+    color: white;
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<!-- Detta html dokument innehåller först en header med rubrik. Min klass "header" presenterar en meny. Denna sida innehåller en kort beskrivning om mig i en paragraf <p> och ett foto i klassen "photo". En footer avslutar sidan, med att fylla i om man vill premunera på nyhetsbrev och också en menylista som navigerar en till de olika sidorna-->
+<html lang="sv">
+    <head>
+        <meta charset= "UTF-8">
+	       <title> Om mig </title>
+            <link rel="stylesheet" href="styles.css">
+    </head>
+    <body> 
+        <!-- sidinfo -->
+        <div class ="header">
+            <div class ="nav">
+                <!--Menyn-->
+                <ul class="menu-bar">
+                    <li class="home"><a href="index.html">Hem</a></li>
+                    <li class="pics"><a href="pics.html">Bilder</a></li>
+                    <li class="me"><a href="me.html">Om mig</a></li>
+                    <li class="contact"><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+                <p>
+                   Olivia är mitt namn och på min hemsida kommer jag dela mina äventye med dig. Under några år nu har jag börjat gilla att vara i naturen. Speciellt gillar jag att vandra i bergen eller paddla kajak. Att vara aktiv är något som jag värdesätter och att samtidigt vara i skog och mark gör livet ännu bättre. 
+                </p>
+                <div class="photo" id="my_photo" >
+			 	     <img src="https://www.dropbox.com/s/05s2lmjyybl514n/Olivia.jpg?raw=1">
+		        </div>               	
+        </div> 
+        <br>
+        <br>
+        <br>
+        <br>
+          	<!--Footer med textfält för ifyllnad av premunation av nyhetsmail-->
+        <footer> 
+            <div id="footer-main">
+                <div class="footer-wrapper">
+                    <div class="footer-newsletter cf">
+                    <div class="subscribe-form">
+                     <p> Prenumerera på nyhetsbrevet!</p>
+                         
+                        <form name="form_newsletter" id="frm_newsletter" class="form_newsletter" action="#" method="post">
+                            <div class="form-group">
+                                
+                            <!--Textfältet för namn--> 
+                                <input type="text" name="newl_name" id="newl_name" placeholder="Namn" class="input_grey">
+                                <div id="name_mess" class="grey" style="display: none;">Skriv in ditt namn</div>
+                            </div>
+                            <div class="form-group">
+                                
+                             <!--Textfältet för mail-->
+                                <input type="text" name="newl_mail" id="newl_mail" placeholder="Mail">
+                                <div id="mail_mess" class="grey" style="display: none;">Skriv in din mail för att få del av äventyren.</div>
+                            </div>
+                            
+                             <!--Knapp för att premunera-->
+                            <div class="form-submit">     
+                                <button title="Subscribe" type="submit"  id = "sub_validate" value="Validate" >Prenumerera<i></i></button>   
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    <!--Menylista i footer -->
+                    <nav class="footer-nav">
+                    <h3> Länkar</h3>
+                    <ul>
+                        <li class="home"><a href="index.html">Hem</a></li>
+                        <li class="pics"><a  href="pics.html">Bilder</a></li>
+                        <li class="me"><a href="me.html">Om mig</a></li>
+                        <li class="contact"><a href="contact.html">Kontakt</a></li>
+                    </ul>
+                    </nav>
+                        <nav class="footer-sm">
+                        <a href="http://facebook.com" target="_blank">
+                            <img src="https://www.dropbox.com/s/jtva6fyyua64h6e/facebook.svg?raw=1" alt="fb" width="50" height="60" style= "border: none;">
+                        </a>    
+                        <a href="http://instagram.com" target="_blank">
+                            <img src="https://www.dropbox.com/s/us5ft77n5o3gu6i/instagram.svg?raw=1" alt="insta" width="50" height="60" style= "border: none;">
+                        </a> 
+                          <a href="http://youtube.com" target="_blank">
+                            <img src="https://www.dropbox.com/s/675h23oewenguio/youtube.svg?raw=1" alt="yt" width="50" height="60" style= "border: none;">
+                        </a>
+                           <a href="http://snapchat.com" target="_blank">
+                            <img src="https://www.dropbox.com/s/7dbx3ug92igjv81/snapchat.svg?raw=1" alt="sc" width="50" height="60" style= "border: none;">
+                        </a>
+                        </nav>
+                </div>
+            </div>
+        </footer> 
+        <!--Länkar till javascriptkod-->
+        <script src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+        <script src="message.js"></script>
+    </body>
+</html> 
